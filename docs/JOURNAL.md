@@ -236,3 +236,6 @@ Session work, all verified on-chain where applicable:
 
 ### Infra
 - 15-minute check-in timer + boot persistence: added in this session (see below).
+
+## 2026-08-16 23:53 UTC - auto check-in (15min timer)
+- uptime: up 27 minutes | disk: 9.8G/20G (53%) | puzzle procs: 1
