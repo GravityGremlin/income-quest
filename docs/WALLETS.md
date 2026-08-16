@@ -23,3 +23,9 @@ Status: ACTIVE (2026-08-16)
 - Coinos is a custodial web wallet (no KYC). Fine for receiving sats / task payouts.
 - Self-custody BTC wallet generated locally with bip39 + bitcoinjs-lib; keys never leave the machine.
 - Any funds received go to the addresses above; sweep plan documented in docs/FUNDING.md.
+### 3. Ethereum (self-custody)
+- Network: Ethereum mainnet
+- Address: `0x3fe9757d8c0eb6d6446f4e8635cba409612adda7`
+- Private key: `~/.secrets/eth-mainnet.key` (mode 0600). NEVER in this repo.
+- Derivation: raw secp256k1 key, keccak256 address (validated against privkey=1 vector on creation).
+- Use for ETH/ERC-20 puzzle prizes (e.g., Guntis Vitolins 8.6 ETH, LogicBeach, FTPK).

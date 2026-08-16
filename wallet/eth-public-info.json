@@ -1,0 +1,5 @@
+{
+  "network": "ethereum",
+  "address": "0x3fe9757d8c0eb6d6446f4e8635cba409612adda7",
+  "note": "PUBLIC receive info only. Private key stored ONLY at ~/.secrets/eth-mainnet.key (0600), NEVER in repo."
+}

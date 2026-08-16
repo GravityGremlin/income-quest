@@ -208,3 +208,31 @@ last commit: bd90162 session: 2026-08-16 21:26 UTC — autonomous resume
 
 ## 2026-08-16 23:00 UTC — auto heartbeat (hourly sync)
 last commit: 468e1a7 session: 2026-08-16 22:56 UTC — autonomous resume
+
+## 2026-08-16 ~23:36 UTC — session: puzzle lab v2 (GSMG closeout + Aoi RBB chapter discovery)
+
+Session work, all verified on-chain where applicable:
+
+### GSMG.io (5.006 BTC across 2 escrows)
+- On-chain verified: 1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe = 1.2563451 BTC, 17ucy1K9ZUAaoY6JVtM932W9jUp5LXfyHa = 3.7505531 BTC (mempool.space, 2026-08-16). The "5 BTC halved twice" narrative = the two-address split, both still unspent.
+- KDF question SETTLED: both phase blobs (656-byte "phase 2/3" and 4096-byte "phase 3") decrypt ONLY under EVP_BytesToKey with SHA-256 digest (OpenSSL `-md sha256`); MD5-KDF fails padding on both. Confirms analysis-repo finding on the phase-3.2.2 blob.
+- Phase-text sweep: 84 base texts -> 469 candidates (plaintext reductions, sha256(X).hex passwords) vs 1GSMG...: 0 matches (witness: pipeline certified in open-crypto-puzzles oracle + analysis repo).
+- LORE sweep (gsmg_sweep.py): 5,468 candidates (LORE x 14 transforms, PHASE_X, SEVEN_PART) vs 1GSMG...: 0 matches, 0.1s.
+- Note: analysis repo (/tmp/opencode/gsmg-analysis, upstream Dileep-Kumar-5/gsmg-puzzle-analysis) documents ~90M+ eliminated space: number-base readings exhausted, dbbi/faed = high-entropy payload with no structure, cosmic_blob = padding false positive, PR#68 master key rests on disavowed tokens. Frontier per open-crypto-puzzles leads.md unchanged.
+
+### Aoi Nakamoto Quizchain — Real Big Block (0.777 BTC, block 77 stage 2)
+- KEY DISCOVERY: the "Second" Wattpad chapter is 12 pages / 273 paragraphs. Prior tested.md was built on a page-1-scale candidate set ("17 candidate paragraphs"); the full text was never swept. The chapter even contains the ITASM rule explanation in-story ("the letters I, T, A, S, and M as first letters of each paragraph").
+- Built a pure-Python MD5->BIP39->BIP44->P2PKH engine (qc_engine.py, /tmp/opencode/aoi-chapter/):
+  - BIP39 tv1+tv2 vectors: PASS
+  - BIP32 official vector (seed 00010203...): master key/chain + m/0' key/chain all PASS
+  - Author-published calibration (entropy 2941774a... WIF L5Z66... at index 1): PASS
+  - p2pkh(1) = 1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH: PASS
+- BUG FOUND + FIXED during certification: base58check leading-'1' padding was wrong (did not count leading zero bytes); every comparison before the fix was invalid. This is exactly the witness-discipline lesson from AGENTS.md. Fixed; all certs re-run green.
+- Hal Finney Stage One witness (19TbyN5KCg1Lg7qHwezifsLVcdSa2Rj5KN): NOT yet reproduced from today's bitcointalk capture. Brute over flip-letter-subsets (128) x para-sets (4) x joins (5) x trails x index 0..9 = 51,200 derivations: 0 matches. Position-based flip subsets (k=3,4,5) over the 16 paragraphs running in background (~324k derivations). Text-content difference from the 2019-era capture is suspected (repo author's capture had 4 case-flip-eligible paragraphs; today's capture has 3).
+- CHAPTER SWEEP next: full 273-paragraph chapter serializations (joins \n,\r\n,\n\n,\r\n\r\n + title/quote/story selections + flip variants) against current + superseded escrows with the certified engine.
+
+### Wallet
+- ETH mainnet address added: 0x3fe9757d8c0eb6d6446f4e8635cba409612adda7 (key ~/.secrets/eth-mainnet.key 0600). Purpose: ETH/ERC-20 puzzle prizes.
+
+### Infra
+- 15-minute check-in timer + boot persistence: added in this session (see below).
