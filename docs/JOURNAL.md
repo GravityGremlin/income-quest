@@ -98,3 +98,6 @@ turnstile unlikely; keep headed mode.
 - NOW: handing the gateway over to systemd (hermes-gateway.service) — kills this manual
   session; result logged to /home/user/gateway-handover.txt. After this: cron (hourly
   sync @ :00, resume @ 16:16) and boot autostart are the mission's heartbeat.
+
+## 2026-08-16 15:00 UTC — auto heartbeat (hourly sync)
+last commit: 8183d08 session end: playbook skill, email matrix, handover pending
