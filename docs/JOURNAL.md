@@ -22,3 +22,6 @@ Hourly check-ins, experiments, results. Newest first.
 - sats.throbbing.click recon: SatsBoard task board, payouts via Lightning address, no KYC.
   Board empty at scan time ("No more tasks available"); has /feedback, /leaderboard, photo tasks guide,
   and a "Submit your own project" project-funding feature (example: Kenya Water Pipe Project, 52% funded).
+
+## 2026-08-16 14:15 UTC — auto heartbeat (hourly sync)
+last commit: 5b0b52a Init: wallets (BTC + LN), journal, research notes
