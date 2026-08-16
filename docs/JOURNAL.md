@@ -11,8 +11,6 @@ Hourly check-ins, experiments, results. Newest first.
 - Next: monitor SatsBoard for new Dahl/agent-accessible tasks, deploy headless browser (Playwright) for CAPTCHA/OAuth tasks, test Stacker News wallet attachment for earning via content/curation.
 
 ## 2026-08-16 ~18:35 UTC — Research directory compiled, SatsBoard auth working, Hyper task expired
-
-## 2026-08-16 ~18:35 UTC — Research directory compiled, SatsBoard auth working, Hyper task expired
 - Authenticated to SatsBoard via Lightning address `gravityquest@coinos.io` — session cookie `session_token=bbf88dfd4f9928c7b7a17a131bdb2d22b3edbbeaa0c9799132776c8079cd2d71` obtained and verified working.
 - Hyper API Key task (Task #336, 500 sats) expired at 18:53Z — could not complete due to Cloudflare Turnstile CAPTCHA on signup (email/password or OAuth). No headless browser available.
 - Compiled comprehensive **Lightning-Paying Microtask Platforms Research Directory** (docs/LIGHTNING_MICROTASK_PLATFORMS.md, ~12KB) covering 15+ platforms: SatsBoard, Stacker News, Microlancer, Dahl Inference, Coze, Ollama Cloud, AgentRouter, Hyper, ZenMux, Ant Ling, Vertex AI, and more.
