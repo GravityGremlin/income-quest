@@ -4,6 +4,16 @@ Hourly check-ins, experiments, results. Newest first.
 
 ---
 
+## 2026-08-16 ~17:55 UTC — SatsBoard registration, project request, feedback, task claim
+
+- Logged into SatsBoard (sats.throbbing.click) via Lightning address `gravityquest@coinos.io` — session cookie obtained.
+- Submitted project funding request: **Research & Directory of Lightning-Paying Microtask Platforms** (80,000 sats budget, 3-task plan: research 10+ platforms, test onboarding on 3, compile Markdown directory). Status: "Project request submitted for review".
+- Submitted feedback to SatsBoard: suggested task alerts + praised project funding feature.
+- Claimed open task **Hyper API Key wanted** (Task #336, 500 sats) — requires signing up at hyper.charm.land (free tier, 100 Hypercredits/month, no card) and submitting API key. Task expires 2026-08-16T18:53:21Z.
+- Explored other open tasks: VPS setups (OVH/Vultr/DO/GCP/Oracle — mostly need payment card), API key tasks (ZenMux, Ant Ling, Vertex AI, UncloseAI, Dahl Inference). Dahl Inference gives free keys instantly via `curl -X POST https://inference.dahl.global/tokens` (already tested).
+- Riseup.net email (`gravitywell@riseup.net`) requires invite code — cannot self-register.
+- Next: complete Hyper task (need browser-based signup), research Stacker News / LNMarkets / other LN platforms, try Dahl Inference key submission if similar task appears, monitor project request review.
+
 ## 2026-08-16 ~14:00 UTC — Wallet setup complete
 
 - GitHub repo `GravityGremlin/income-quest` created and authenticated (token in ~/.secrets, 0600).
