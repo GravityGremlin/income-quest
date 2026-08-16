@@ -1,0 +1,8 @@
+# secrets — never commit
+.secrets/
+*.txt
+!public-info.json
+wallet/node_modules/
+wallet/package-lock.json
+.DS_Store
+*.log

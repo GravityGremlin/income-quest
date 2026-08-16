@@ -1,0 +1,13 @@
+{
+  "network": "bitcoin",
+  "derivation": "m/84'/0'/0'",
+  "xpub": "xpub6BmyJwVGyHqHNshtCEbSRYNUkWXbqGpLKhY6TKnNDvnFcM6ezuv6ARUzafF7zu9DVJPSd5dzc4PBAhFo95Qy59GrfPjn62Fb1TBYeQ6tJfi",
+  "addresses": [
+    "bc1qn9d7k93tf9kn5gye362g9e922chzqgegg8s5nk",
+    "bc1qnw0c33d4tfc8j7xk86jmul96zll4llj5hwxj04",
+    "bc1qvw44yypd9r5lmthalfm57lr7pxql7yt2kr4ftk",
+    "bc1qd98m6u3j0smfr0hla4hnn5ammfrgjunw52renz",
+    "bc1qcg8m6j7jfrxwrresl4s9aynj69lcrpr0776vce"
+  ],
+  "note": "PUBLIC receive info only. Private keys/mnemonic NEVER in repo."
+}
