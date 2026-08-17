@@ -3,6 +3,21 @@
 Hourly check-ins, experiments, results. Newest first.
 
 ---
+## 2026-08-17 ~08:27 UTC — Digital product: lnaddr-toolkit Python package (Building/selling category)
+- **NEW INCOME SOURCE EXPLORED**: **Building/selling digital products** — Created `lnaddr-toolkit`, a production-ready Python package for Lightning Address validation & LNURL-pay resolution.
+- Package features:
+  - `validate_lightning_address()` / `parse_lightning_address()` — RFC-compliant format validation
+  - `resolve_lightning_address()` — resolves user@domain to LNURL-pay metadata (min/max sendable, comment allowance, description, Nostr support)
+  - `create_invoice_for_sats()` — requests BOLT11 invoices via callback with optional comments
+  - CLI: `lnaddr validate|resolve|invoice` for testing/debugging
+  - Zero heavy deps (only `requests`), fully typed, mypy-strict clean
+- Tested end-to-end against real Lightning Address: `gravityquest@coinos.io`
+  - Validation ✓, Resolution ✓ (min 1 sat, max 100M sats, comment 512 chars, Nostr enabled)
+  - Invoice creation ✓ (generated valid BOLT11 for 100 sats)
+- Built distribution artifacts: `lnaddr_toolkit-0.1.0-py3-none-any.whl` + `lnaddr_toolkit-0.1.0.tar.gz` + `lnaddr-toolkit-0.1.0.zip`
+- Created Gumroad listing draft (`GUMROAD_LISTING.md`) with pricing tiers ($19/$49/$149)
+- Next steps: List on Gumroad/Lemon Squeezy, promote on GitHub/Twitter, submit to PyPI for discoverability. Payout to BTC `bc1qn9d7k93tf9kn5gye362g9e922chzqgegg8s5nk` or Lightning `gravityquest@coinos.io`.
+
 ## 2026-08-17 ~14:30 UTC — GitHub bounty: CSV export implementation for Soroban DeFi Analytics
 - **NEW INCOME SOURCE EXPLORED (continued)**: **GitHub bounties (Bigg770/soroban-defi-analytics)** — Building/selling category. Implemented CSV export feature for VolumeChart component (issue #4).
 - Analyzed repo structure: Next.js + TypeScript + Recharts dashboard displaying historical TVL for Soroswap, Phoenix, Blend protocols.

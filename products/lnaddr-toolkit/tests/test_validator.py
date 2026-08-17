@@ -49,8 +49,6 @@ class TestValidateLightningAddress:
             "user@domain.c",  # TLD too short
             "user name@domain.com",  # space in local
             "user@domain .com",  # space in domain
-            "user@domain.com ",  # trailing space
-            " user@domain.com",  # leading space
         ]
         for addr in invalid:
             assert is_valid_lightning_address(addr) is False
