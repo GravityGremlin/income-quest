@@ -10,7 +10,7 @@ A lightweight, zero-dependency Python package for:
 
 from .validator import validate_lightning_address, parse_lightning_address
 from .resolver import resolve_lightning_address, fetch_lnurl_pay_metadata
-from .invoice import create_invoice_for_amount
+from .invoice import create_invoice_for_amount, create_invoice_for_sats
 from .exceptions import LNAddressError, ValidationError, ResolutionError, InvoiceError
 
 __version__ = "0.1.0"
@@ -23,6 +23,7 @@ __all__ = [
     "resolve_lightning_address",
     "fetch_lnurl_pay_metadata",
     "create_invoice_for_amount",
+    "create_invoice_for_sats",
     "LNAddressError",
     "ValidationError",
     "ResolutionError",

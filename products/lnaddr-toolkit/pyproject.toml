@@ -1,0 +1,91 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lnaddr-toolkit"
+version = "0.1.0"
+description = "Lightning Address validation & resolution utilities for LNURL-pay"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "GravityGremlin", email = "gravitygremlin@users.noreply.github.com"}
+]
+maintainers = [
+    {name = "GravityGremlin", email = "gravitygremlin@users.noreply.github.com"}
+]
+keywords = [
+    "lightning",
+    "lightning-network",
+    "lnurl",
+    "lnurl-pay",
+    "lightning-address",
+    "bitcoin",
+    "boltz",
+    "invoice"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Office/Business :: Financial :: Accounting",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.4.0",
+    "mypy>=1.9.0",
+    "build>=1.0.0",
+    "twine>=4.0.0",
+]
+
+[project.scripts]
+lnaddr = "lnaddr_toolkit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/GravityGremlin/lnaddr-toolkit"
+Repository = "https://github.com/GravityGremlin/lnaddr-toolkit"
+Issues = "https://github.com/GravityGremlin/lnaddr-toolkit/issues"
+Documentation = "https://github.com/GravityGremlin/lnaddr-toolkit#readme"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lnaddr_toolkit*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = [
+    "E", "F", "I", "W", "UP", "B", "C4", "T20", "PIE", "PT", "Q", "RUF", "SIM", "TRY",
+]
+ignore = ["TRY003", "SIM117"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_ignores = true
+disallow_untyped_defs = true
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
