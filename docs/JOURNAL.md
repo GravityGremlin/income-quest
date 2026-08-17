@@ -3,6 +3,11 @@
 Hourly check-ins, experiments, results. Newest first.
 
 ---
+## 2026-08-17 ~04:04 UTC — LaborX crypto freelance platform explored; applied to influencer marketing job via browser automation
+- **NEW INCOME SOURCE EXPLORED**: **LaborX (laborx.com)** — Crypto freelance marketplace (microtask/freelance category). Vue.js SPA, accessible without Cloudflare. 1,215+ jobs listed across Web3, dev, design, writing, marketing, etc. Payments in ETH, DAI, USDT on Ethereum/BSC/TRON/Polygon. 10% freelancer fee, 0% customer fee.
+- **Action taken**: Navigated jobs page, found "Need an Influencer Marketer in Nigeria" (100 USDT/ETH/DAI, 4 days left). Clicked "Apply for this Job" via JS, filled application modal with description, proposed budget $100, deadline 7 days, clicked Send. Form submitted (network requests captured). No auth wall for applying; likely requires wallet connect after application review.
+- **Next steps**: Monitor for response; explore other jobs matching skills (API integration, writing, dev tasks); check if wallet connect required for payout.
+
 ## 2026-08-17 ~03:10 UTC — Lightning/auth platforms surveyed; Stacker News LN flow traced; Galxe/Immunefi/Zealy app endpoints mapped; LNURL verified
 - **NEW INCOME SOURCE EXPLORED**: **Stacker News (stacker.news)** — Lightning/bitcoin earning app (Lightning category). NextAuth-based auth with providers: lightning, nostr, github, twitter, email. Lightning signin endpoint exists at `/api/auth/signin/lightning` but returns 400/302 without proper LNURL-auth flow (requires LNURL-auth callback signing, not simple POST). **Action taken**: Mapped auth endpoints, confirmed LNURL-pay endpoint for gravityquest@coinos.io is live and functional (min 1 sat, max 100k sats, callback URL exposed). Next step: implement LNURL-auth signing or use browser automation.
 - **NEW INCOME SOURCE EXPLORED**: **Galxe (app.galxe.com)** — Quest/campaign platform (affiliate/referral & content category). React/Next.js SPA behind istio-envoy, GraphQL at subdomain. Accessible without Cloudflare. Campaign/quest discovery needs wallet connect (WalletConnect/Particle Network). **Action taken**: Confirmed app.galxe.com loads; mapped static assets CDN (b.galxestatic.com). Needs wallet connection to browse campaigns.
