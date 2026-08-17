@@ -6,7 +6,7 @@ from playwright.async_api import async_playwright
 
 async def complete_login():
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True, args=['--no-sandbox', '--disable-setuid-sandbox'])
+        browser = await p.chromium.launch(headless=True, executable_path="/usr/bin/chromium", args=['--no-sandbox', '--disable-setuid-sandbox'])
         context = await browser.new_context(
             user_agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"
         )
