@@ -195,3 +195,6 @@ last commit: 5cf1e70 session: 2026-08-17 05:54 UTC — autonomous resume
 - keir-finlow-bates-blockchain-book-600ksats    EN_hard_1  181rPpfdUGFg4fVEdhDZEfDbBSqgigtoZR           200000 sats          swept            OK
 - keir-finlow-bates-blockchain-book-600ksats    EN_hard_2  161YgNX2NrCzGunWvoV1hN3DuzWeuovBK3           200000 sats          swept            OK
 - 
+
+## 2026-08-17 06:22 UTC - auto check-in (15min timer)
+- uptime: up 6 hours, 56 minutes | disk: 11G/20G (60%) | puzzle procs: 0
