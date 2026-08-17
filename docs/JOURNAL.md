@@ -245,3 +245,16 @@ last commit: 8370429 auto check-in 2026-08-16 23:53 UTC
 
 ## 2026-08-17 00:02 UTC - auto check-in (15min timer)
 - uptime: up 36 minutes | disk: 9.9G/20G (54%) | puzzle procs: 1
+
+## 2026-08-17 00:15 UTC — session wrap: Aoi RBB full-chapter sweep negative ledgers
+
+- Engine certified (author WIF vector, BIP39 tv1/tv2, BIP32 spec vector, p2pkh(1)) after fixing a base58check leading-'1' padding bug caught by the witness protocol.
+- Full chapter recovered: 12 pages, 273 paragraphs (prior research swept a page-1-scale set).
+- Results (all against current 14zMk..., superseded 1EFoj..., Block 76 13Cv...):
+  - phase2 (13 selections x 4 flips x 6 joins x 2 trails x 2 nbsp x 10 idx): 15,360 derivations, 0 hit
+  - phase2b (prefixes, punctuation norms, char-class edits, trailing-blank runs): 394,820 derivations, 0 hit
+  - phase2c (13 extra selections incl. prose/dialogue splits, idx 0..20, utf-8/latin-1/cp1252): 39,312 derivations, 0 hit
+- Author's own line-break timeline confirmed from clues: v1 = one line break between paragraphs (superseded escrow), v2 = two line breaks (current escrow); both conventions were in the swept join space.
+- Stage One witness (19TbyN... from Hal Finney "Bitcoin and me"): NOT reproducible from today's bitcointalk text under flip-letter-subsets (51,200) + position-flip subsets k=3..5 (323,904) across joins/trails/indices 0..9. Conclusion: today's capture differs in content from the 2019-era text (repo author's capture flipped 4 paragraphs; ours yields 3). Archive services (Wayback CDX) are 503-ing tonight; retry for a 2013-2019 topic capture is queued.
+- Next for RBB: (a) 2019-era capture diff; (b) bounded 2-char paragraph-boundary edit sweep (~12.5M derivations, ~7h — background when compute is free); (c) re-read of the author's final 27 posts when Reddit JSON access is available (blocked from this VM tonight; old.reddit JSON endpoint blocked).
+- Puzzle cache next session: try old.reddit via non-JSON HTML or pushshift mirror for the chn8un thread.
