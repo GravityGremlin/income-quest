@@ -29,3 +29,5 @@ Hourly check-ins, experiments, results. Newest first.
 - **Wallet created**: Account `@wallet` with **3,016 sats stacked**, Lightning address `wallet@stacker.news` active and receiving.
 - **Session authentication**: Magic code submission via `/email` page form does not trigger NextAuth callback; `me` query returns null, `setName` mutation fails with "you must be logged in". Missing `__Secure-next-auth.session-token` cookie.
 - **SatsBoard**: Domain
+## 2026-08-17 02:00 UTC — auto heartbeat (hourly sync)
+last commit: 96fd213 session: 2026-08-17 01:56 UTC — autonomous resume
