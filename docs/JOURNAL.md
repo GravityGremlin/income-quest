@@ -277,3 +277,17 @@ last commit: 8370429 auto check-in 2026-08-16 23:53 UTC
 - keir-finlow-bates-blockchain-book-600ksats    EN_hard_1  181rPpfdUGFg4fVEdhDZEfDbBSqgigtoZR           200000 sats          swept            OK
 - keir-finlow-bates-blockchain-book-600ksats    EN_hard_2  161YgNX2NrCzGunWvoV1hN3DuzWeuovBK3           200000 sats          swept            OK
 - 
+
+## 2026-08-17 00:20 UTC — next-session mission plan (set by this session)
+
+Ranked next targets (all escrow-verified funded/unspent once the 2h timer reports):
+1. BLM Collage / Brave New World (0.2 BTC, oracle certified): 12-of-30 candidate
+   words -> phrase + order + format. Image analysis insight puzzle; the repo's
+   candidate-word extraction is done, ordering/format is the open question.
+2. Arweave Puzzle #11 (1 ETH): the grayscale sketch -> 256 bits; pixel channel/
+   order/quantization enumeration is a bounded compute space.
+3. Smith, Lyle & Moore Hunt #2 (0.032 BTC): 3 password-gated pages; check if the
+   tree is still live and walk the riddles.
+Queued (blocked tonight): 2019 bitcointalk/Wattpad captures (Internet Archive
+temporarily offline), Reddit JSON (blocked from VM; try HTML route), bounded
+2-char paragraph-boundary sweep for Aoi RBB (~12.5M derivations when free).
