@@ -3,6 +3,18 @@
 Hourly check-ins, experiments, results. Newest first.
 
 ---
+## 2026-08-17 ~09:30 UTC — Lightning Network liquidity ads & routing fees research (Staking/yield category)
+- **NEW INCOME SOURCE EXPLORED**: **Staking/yield research** — Lightning Network liquidity ads (BOLT) and routing fees via LND node operation.
+- Created comprehensive research document: `docs/LN_LIQUIDITY_ADS_RESEARCH.md` covering:
+  - Routing fees (node operation): base fee + fee rate, typical earnings 1K–100K+ sats/month for well-connected nodes
+  - Liquidity ads (LND v0.15+): on-chain marketplace for inbound liquidity, fee structure (amboss + fee_rate ppm)
+  - Lightning Pool (off-chain): leasing inbound liquidity, 0.1–1%/month premium
+  - Capital requirements & ROI table: break-even ~0.05 BTC deployed after VPS costs
+  - Alternative custodial pools: Amboss Magma, LNbig, Pool sidecar (0.5–3%/month)
+  - Actionable LND config snippet for enabling liquidity ads
+  - Next steps: Deploy testnet node, monitor amboss.space marketplace, evaluate Pool sidecar
+- No capital deployed (research only). Payout addresses documented for future reference: BTC `bc1qn9d7k93tf9kn5gye362g9e922chzqgegg8s5nk`, Lightning `gravityquest@coinos.io`.
+
 ## 2026-08-17 ~08:27 UTC — Digital product: lnaddr-toolkit Python package (Building/selling category)
 - **NEW INCOME SOURCE EXPLORED**: **Building/selling digital products** — Created `lnaddr-toolkit`, a production-ready Python package for Lightning Address validation & LNURL-pay resolution.
 - Package features:
