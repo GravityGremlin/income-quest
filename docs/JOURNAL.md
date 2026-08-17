@@ -3,6 +3,18 @@
 Hourly check-ins, experiments, results. Newest first.
 
 ---
+## 2026-08-17 ~10:45 UTC — Bug bounty: tenstorrent/tt-metal logaddexp overflow fix (Bug bounties/security category)
+- **NEW INCOME SOURCE EXPLORED**: **Bug bounties/security** — Targeted tenstorrent/tt-metal bounty issue #52037 ($1,500) for overflow-safe `logaddexp`/`logaddexp2` implementation.
+- Found bounty via GitHub API search for open bounties; issue requires fixing `logaddexp(a,b)` returning `inf` for `|a|>88.7` where exact result is finite.
+- Standard identity used: `logaddexp(a,b) = max(a,b) + log1p(exp(-|a-b|))` — avoids `exp` overflow since `exp(-|a-b|) ∈ (0,1]`.
+- Cloned tt-metal repo, created branch `fix/logaddexp-overflow-safe`, implemented host-side composite operations:
+  - Added `logaddexp`/`logaddexp2` declarations to `binary_composite.hpp`
+  - Implemented 7-step composite ops in `binary_composite_op.cpp` using existing `maximum`, `subtract`, `abs`, `neg`, `exp`/`exp2`, `log1p`/`log2`, `add`
+  - Modified `invoke_binary_ng_impl` in `binary.cpp` to dispatch `LOGADDEXP`/`LOGADDEXP2` to new composite implementation
+- Covers both tensor-tensor and tensor-scalar variants via existing operation overloads.
+- Next steps: Verify compilation, run tests, fork repo, submit PR to claim bounty.
+- Payout addresses ready: BTC `bc1qn9d7k93tf9kn5gye362g9e922chzqgegg8s5nk`, Lightning `gravityquest@coinos.io`.
+
 ## 2026-08-17 ~09:30 UTC — Lightning Network liquidity ads & routing fees research (Staking/yield category)
 - **NEW INCOME SOURCE EXPLORED**: **Staking/yield research** — Lightning Network liquidity ads (BOLT) and routing fees via LND node operation.
 - Created comprehensive research document: `docs/LN_LIQUIDITY_ADS_RESEARCH.md` covering:
