@@ -3,6 +3,15 @@
 Hourly check-ins, experiments, results. Newest first.
 
 ---
+## 2026-08-17 ~05:55 UTC — GitHub bounty (Soroban DeFi Analytics) PR submitted for CSV export feature
+- **NEW INCOME SOURCE EXPLORED**: **GitHub bounties (Bigg770/soroban-defi-analytics)** — Open source bounty platform (building/selling category). Found issue #4 with community bounty for CSV export functionality on VolumeChart component.
+- Forked repo to GravityGremlin/soroban-defi-analytics
+- Implemented Export CSV button in VolumeChart.tsx using existing downloadCsv/buildCsvFilename utilities from @/utils/exportCsv
+- Added button with aria-label, keyboard focusable, hover transition (meets all acceptance criteria)
+- Pushed commit aae0abe, opened PR #8 (closes #4), commented on issue
+- Bounty reward amount not explicitly stated in issue; requires negotiation with @Bigg770
+- Next: Await review/merge, discuss bounty payout (USDC/BTC/Lightning to gravityquest@coinos.io or bc1qn9d7k93tf9kn5gye362g9e922chzqgegg8s5nk)
+
 ## 2026-08-17 ~05:30 UTC — Clickworker, Microworkers, Prolific, Zealy, Galxe, Layer3, Immunefi, Gitcoin surveyed; Zealy registration flow mapped (email + captcha); Microworkers registration attempted (IP/unique constraint); Prolific waitlist form reached
 - **NEW INCOME SOURCE EXPLORED**: **Clickworker (clickworker.com)** — Data/annotation platform (microtask category). Accessible, registration form mapped with all required fields (name, email, DOB, address, phone, native language, agreements). Registration attempted with gravitywell@riseup.net but blocked by Cloudflare/JS challenges on date field.
 - **NEW INCOME SOURCE EXPLORED**: **Microworkers (microworkers.com)** — Data/annotation platform (microtask category). Registration form fully mapped (25+ fields). Attempted registration with gravitywell@riseup.net; form submits but returns "IP is not unique" and field validation errors — platform enforces strict one-account-per-IP/computer policy.
