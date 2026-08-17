@@ -258,3 +258,22 @@ last commit: 8370429 auto check-in 2026-08-16 23:53 UTC
 - Stage One witness (19TbyN... from Hal Finney "Bitcoin and me"): NOT reproducible from today's bitcointalk text under flip-letter-subsets (51,200) + position-flip subsets k=3..5 (323,904) across joins/trails/indices 0..9. Conclusion: today's capture differs in content from the 2019-era text (repo author's capture flipped 4 paragraphs; ours yields 3). Archive services (Wayback CDX) are 503-ing tonight; retry for a 2013-2019 topic capture is queued.
 - Next for RBB: (a) 2019-era capture diff; (b) bounded 2-char paragraph-boundary edit sweep (~12.5M derivations, ~7h — background when compute is free); (c) re-read of the author's final 27 posts when Reddit JSON access is available (blocked from this VM tonight; old.reddit JSON endpoint blocked).
 - Puzzle cache next session: try old.reddit via non-JSON HTML or pushshift mirror for the chn8un thread.
+
+## 2026-08-17 00:13 UTC - escrow check (2h timer)
+- ## gsmg-io-5btc-puzzle
+- gsmg-io-5btc-puzzle                           small blob gate 1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe           125634510 sats       partially-spent  OK
+- gsmg-io-5btc-puzzle                           Dualite blob gate 17ucy1K9ZUAaoY6JVtM932W9jUp5LXfyHa           375055310 sats       funded-unspent   OK
+- ## aoi-nakamoto-quizchain-0-854btc
+- aoi-nakamoto-quizchain-0-854btc               Real Big Block, stage 2 14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W           77700000 sats        funded-unspent   OK
+- aoi-nakamoto-quizchain-0-854btc               Quizchain2 Block 76 13Cv6SXUnzGDT8JHqzzJ8xMPtsSdhJA4wd           7700000 sats         funded-unspent   OK
+- aoi-nakamoto-quizchain-0-854btc               Real Big Block, stage 1 (certification reference, solved by a third party in 2019, not part of the live prize) 19TbyN5KCg1Lg7qHwezifsLVcdSa2Rj5KN           n/a                  swept            OK
+- ## guntis-vitolins-metamask-8-6eth
+- guntis-vitolins-metamask-8-6eth               main       0x9C2F44EFAd0c1E852a09dF9939e6DaF061140CaF   8.61254155425694462 ETH funded-unspent   OK
+- ## keir-finlow-bates-blockchain-book-600ksats
+- keir-finlow-bates-blockchain-book-600ksats    EN_easy_1  14aFhno96fkt7knLWMDQ4j8yh8v5hBF4n1           200000 sats          swept            OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_easy_2  14utGQn5GdfPvUrHNLAwTmmP99QpXm9mg6           200000 sats          swept            OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_medium_s 1QFafw3weoWTRQhiLafRw2eyWbVmES6wfJ           200000 sats          swept            OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_medium  17Y9czcbcCz433QXsy1SGQjwLb27BBtLLZ           200000 sats          funded-unspent   OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_hard_1  181rPpfdUGFg4fVEdhDZEfDbBSqgigtoZR           200000 sats          swept            OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_hard_2  161YgNX2NrCzGunWvoV1hN3DuzWeuovBK3           200000 sats          swept            OK
+- 
