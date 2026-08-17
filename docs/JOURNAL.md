@@ -154,3 +154,6 @@ last commit: 039bd06 auto check-in 2026-08-17 09:55 UTC
 - keir-finlow-bates-blockchain-book-600ksats    EN_hard_1  181rPpfdUGFg4fVEdhDZEfDbBSqgigtoZR           200000 sats          swept            OK
 - keir-finlow-bates-blockchain-book-600ksats    EN_hard_2  161YgNX2NrCzGunWvoV1hN3DuzWeuovBK3           200000 sats          swept            OK
 - 
+
+## 2026-08-17 10:25 UTC - auto check-in (15min timer)
+- uptime: up 11 hours, 0 minute | disk: 11G/20G (60%) | puzzle procs: 0
