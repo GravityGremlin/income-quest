@@ -1,0 +1,15 @@
+{
+  "props": {
+    "pageProps": {
+      "isLandingPageDomain": true
+    },
+    "__N_SSP": true
+  },
+  "page": "/",
+  "query": {},
+  "buildId": "PQrY5-PbSWQ6Eo5f_wzQc",
+  "isFallback": false,
+  "isExperimentalCompile": false,
+  "gssp": true,
+  "scriptLoader": []
+}

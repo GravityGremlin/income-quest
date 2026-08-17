@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+  <title>      Microlancer.io - Microtask freelancing with Bitcoin &amp; Lightning Network
+      </title>
+      <meta name="Description" content="Bitcoin Lightning Network freelancer marketplace.">
+  
+  <link rel="icon" href="https://microlancer.io/favicon.ico" sizes="16x16 32x32 128x128 152x152 167x167 180x180 192x192 196x196" type="image/png">
+
+  <!-- reuse same icon for Safari -->
+  <link rel="apple-touch-icon" href="https://microlancer.io/media/images/afb-logo-192x192-white.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="manifest" href="https://microlancer.io/manifest.json">
+  <meta name="theme-color" content="#2E294E" />
+
+  <style id="standardCss" nonce='BPe4ryb3JaoMCNdr2QtoW3hotgAhNAxoYnE2hciCS2w='>
+      </style>
+
+  <link rel='stylesheet' href='https://microlancer.io/libs/styles.css?v=240d054fa' id="appstyles">
+  <link rel="preload" href="https://microlancer.io/media/css/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://microlancer.io/media/css/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://microlancer.io/media/css/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+  <script nonce='BPe4ryb3JaoMCNdr2QtoW3hotgAhNAxoYnE2hciCS2w='>
+    document.documentElement.setAttribute('lang', navigator.language);
+    var lang = navigator.language;
+  </script>
+
+  <!--<link rel="preload" id="stylesheet" href="https://microlancer.io/libs/styles.css" as="style" onload="this.rel='stylesheet'">-->
+</head>
+
+<body>
+
+  <script nonce="BPe4ryb3JaoMCNdr2QtoW3hotgAhNAxoYnE2hciCS2w=" defer async="false">
+    var object;
+    var t;
+    var translations;
+    let httpRequest = new XMLHttpRequest();
+    httpRequest.open("GET", "https://microlancer.io/libs/lang.json?lang="+lang+"&v=240d054fa", true);
+    httpRequest.send();
+    httpRequest.addEventListener("readystatechange", function() {
+      if (this.readyState === this.DONE) {
+        translations = JSON.parse(this.response);
+        console.log('translations ready');
+        window.release = "240d054fa";
+        // console.log({
+        //   t: window.translation
+        // });
+        console.log('release = ' + window.release);
+        let script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        let srcLink = "https://microlancer.io/libs/scripts.js?v=240d054fa";
+        script.setAttribute("src", srcLink);
+        document.body.appendChild(script);
+      }
+    });
+
+    function t(key, fields = {}) {
+      if (!_.isEmpty(fields) && (key in translations.data) && translations.data[key].includes('%')) {
+        let text = translations.data[key];
+        const positions = [];
+        let hasObject = false;
+
+        // Assumes that there are no overlaps
+        for (const field in fields) {
+
+          if (typeof fields[field] !== 'object') {
+            // simple text replacement
+            text = text.replace('%' + field, fields[field]);;
+          } else {
+            const idx = text.indexOf('%' + field);
+            positions.push([idx, idx + field.length + 1]);
+          }
+        }
+
+        let idx = 0;
+        const output = [];
+
+        for (const position of positions) {
+          const [startIdx, endIdx] = position;
+
+          // Non-parameter section before next parameter-section
+          if (startIdx > idx) {
+            output.push(text.substring(idx, startIdx));
+            idx = startIdx;
+          }
+
+          const field = text.substring(idx + 1, endIdx);
+          const value = fields[field];
+
+          if (typeof value === 'object') hasObject = true;
+
+          output.push(value);
+          idx = endIdx;
+        }
+
+        // Non-parameter section after last parameter section
+        if (idx < text.length) output.push(text.substring(idx));
+
+        return hasObject ? output : output.join('');
+      }
+
+      if (!(key in translations.data)) {
+        return key;
+      }
+
+      return translations.data[key];
+    }
+    console.log('start');
+    window.initialData = {
+    "feePercentTasker": 1,
+    "feePercentAsker": 1,
+    "isLoggedIn": null,
+    "tasks": {
+        "sort": [],
+        "tasks": [],
+        "matchedRecords": 0,
+        "totalRecords": 0,
+        "start": 0,
+        "length": 10,
+        "minimumAmount": 0,
+        "showHidden": 0,
+        "status": 0,
+        "showCompleted": 0,
+        "user": "",
+        "tag": "",
+        "tagStats": [],
+        "categories": [],
+        "initial": true
+    },
+    "latestExchangeRate": "62927.00000000",
+    "latestEventId": 3428522,
+    "notificationList": {
+        "sort": [],
+        "notifications": [],
+        "totalRecords": 0,
+        "matchedRecords": 0,
+        "unreadRecords": 0,
+        "startIndex": 0,
+        "limit": 5,
+        "maxRecordId": 0,
+        "initial": true
+    },
+    "baseUrl": "https:\/\/microlancer.io",
+    "csrfToken": "",
+    "environment": "prod",
+    "currentUser": {
+        "username": "",
+        "id": "",
+        "profilePic": "",
+        "balance": "",
+        "balanceFormatted": "",
+        "avatarPlaceholder": {
+            "initials": "??",
+            "backgroundColor": "#fff",
+            "fontColor": "#000"
+        },
+        "preferences": {
+            "darkMode": false,
+            "currency": "USD",
+            "language": "en-US",
+            "language_detect": "auto",
+            "notifications": {
+                "basicBrowser": false,
+                "basicEmail": true,
+                "telegram": false,
+                "newTaskAlerts": {
+                    "enabled": false,
+                    "keywords": "",
+                    "minTaskAmount": "1",
+                    "onlySecuredUsers": "0",
+                    "onlyVerifiedUsers": false
+                },
+                "taskStatusChangeEmail": true,
+                "taskStatusChangeApp": false,
+                "taskCommentsEmail": true,
+                "taskCommentsApp": false,
+                "userMessageEmail": true,
+                "userMessageApp": false,
+                "reminderEmail": true,
+                "reminderApp": false,
+                "savedSearches": [],
+                "newReviewEmail": true,
+                "newReviewApp": false,
+                "siteNewsletterEmail": true
+            }
+        },
+        "email": "",
+        "supportHash": "",
+        "isAdmin": false,
+        "isNodeVerified": false,
+        "nodeId": "",
+        "securityDeposit": 0,
+        "uninitialized": true
+    }
+};
+    // console.log({
+    //   w: window.initialData
+    // });
+  </script>
+  <!-- <script type="module" defer async=false nonce="BPe4ryb3JaoMCNdr2QtoW3hotgAhNAxoYnE2hciCS2w=" src="https://microlancer.io/libs/translations.js"></script> -->
+  <!-- <script nonce="BPe4ryb3JaoMCNdr2QtoW3hotgAhNAxoYnE2hciCS2w=" defer async=false src="https://microlancer.io/libs/scripts.js?v=240d054fa"></script> -->
+  <script nonce="BPe4ryb3JaoMCNdr2QtoW3hotgAhNAxoYnE2hciCS2w=" defer>
+    //  const registerServiceWorker = async () => {
+    //    const swRegistration = await navigator.serviceWorker.register('/service-worker.js');
+    //    return swRegistration;
+    //  }
+
+    var swRegistration = null;
+
+    //function f() {
+    if ('serviceWorker' in navigator) {
+      console.log("Will the service worker register?");
+      navigator.serviceWorker.register('/service-worker.js').then(function(reg) {
+        console.log({
+          reg
+        });
+        swRegistration = reg;
+
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+
+
+    }
+
+    if (typeof(BroadcastChannel) != 'undefined') {
+      const channel = new BroadcastChannel('sw-messages');
+      channel.addEventListener('message', event => {
+        console.log('Received', event.data);
+        route(event.data.url);
+      });
+    }
+
+    //}
+
+    //    const main = async () => {
+    //        const swRegistration = await registerServiceWorker();
+    //    }
+
+    //    main();
+
+    //
+    //  var swReg = null;
+    //  if ('serviceWorker' in navigator) {
+    //    console.log("Will the service worker register?");
+    //    navigator.serviceWorker.register('/service-worker.js')
+    //      .then(function(reg){
+    //        console.log("Yes, it did on scope " + reg.scope);
+    //
+    //        swReg = reg;
+    //
+    //        reg.showNotification('yes');
+    //
+    //
+    //      }).catch(function(err) {
+    //        console.log("No it didn't. This happened: ", err)
+    //      });
+    //  }
+  </script>
+  <noscript>Please enable Javascript | <a href="https://markets.microlancer.io/">Markets</a>
+  </noscript>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2c508634fc48183',t:'MTc4NjkzMTQ3Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"fa876937dd6a41a79e755b769cce8ebe","r":1}' crossorigin="anonymous"></script>
+</body>
+
+</html>

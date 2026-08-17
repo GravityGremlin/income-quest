@@ -29,10 +29,13 @@ async def explore_galxe_api():
         
         for endpoint in endpoints:
             print(f"\n🔍 Testing {endpoint}...")
-            resp = await client.post(endpoint, json={"query": "{ __schema { queryType { name } } }"})
-            print(f"Status: {resp.status_code}")
-            if resp.status_code == 200:
-                print(f"Response: {resp.text[:500]}")
+            try:
+                resp = await client.post(endpoint, json={"query": "{ __schema { queryType { name } } }"})
+                print(f"Status: {resp.status_code}")
+                if resp.status_code == 200:
+                    print(f"Response: {resp.text[:500]}")
+            except Exception as e:
+                print(f"Error: {e}")
         
         # Check for REST API endpoints
         rest_endpoints = [
@@ -44,10 +47,13 @@ async def explore_galxe_api():
         
         for endpoint in rest_endpoints:
             print(f"\n🔍 Testing REST {endpoint}...")
-            resp = await client.get(endpoint)
-            print(f"Status: {resp.status_code}")
-            if resp.status_code == 200:
-                print(f"Response: {resp.text[:500]}")
+            try:
+                resp = await client.get(endpoint)
+                print(f"Status: {resp.status_code}")
+                if resp.status_code == 200:
+                    print(f"Response: {resp.text[:500]}")
+            except Exception as e:
+                print(f"Error: {e}")
 
 if __name__ == "__main__":
     asyncio.run(explore_galxe_api())

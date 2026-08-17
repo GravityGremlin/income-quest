@@ -1,0 +1,2582 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+  <script>document.querySelector('html').classList.remove('no-js');</script>
+
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en" href="https://www.ledger.com/academy" />
+<link rel="alternate" hreflang="fr" href="https://www.ledger.com/fr/academy" />
+<link rel="alternate" hreflang="tr" href="https://www.ledger.com/tr/academy" />
+<link rel="alternate" hreflang="de" href="https://www.ledger.com/de/academy" />
+<link rel="alternate" hreflang="pt-br" href="https://www.ledger.com/pt-br/academy" />
+<link rel="alternate" hreflang="es" href="https://www.ledger.com/es/academy" />
+<link rel="alternate" hreflang="ru" href="https://www.ledger.com/ru/academy" />
+<link rel="alternate" hreflang="zh-hans" href="https://www.ledger.com/zh-hans/academy" />
+<link rel="alternate" hreflang="ja" href="https://www.ledger.com/ja/academy" />
+<link rel="alternate" hreflang="ko" href="https://www.ledger.com/ko/academy" />
+<link rel="alternate" hreflang="ar" href="https://www.ledger.com/ar/academy" />
+<link rel="alternate" hreflang="th" href="https://www.ledger.com/th/academy" />
+<link rel="alternate" hreflang="x-default" href="https://www.ledger.com/academy" />
+<link rel="preload" href="//cdn.optimizely.com/js/30433690750.js" as="script" crossorigin="anonymous"><link rel="preconnect" href="//logx.optimizely.com" crossorigin><link rel="dns-prefetch" href="https://cdn.optimizely.com">
+    <script>
+    function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(";");
+        for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === " ") {
+        c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+        return c.substring(name.length, c.length);
+        }
+        }
+        return "";
+    }
+    function consentState() {
+        const optanonCookieBoxClosedCookieValue = getCookie("OptanonAlertBoxClosed");
+
+        if (!optanonCookieBoxClosedCookieValue) return "pending";
+        
+        const optanonConsentCookieValue = getCookie("OptanonConsent");
+        
+        if (optanonConsentCookieValue?.includes("C0002:1")) return "accepted";
+        
+        return "refused";
+    }
+    
+    window.optimizely = window.optimizely || [];
+    
+    switch(consentState()) {
+        case "accepted":
+            window.optimizely.push({
+                type: "sendEvents",
+            });
+         break;
+         case "refused":
+            window.optimizely.push({
+                type: "disable",
+                scope: "tracking",
+            });
+        break; 
+        case "pending":
+            window.optimizely.push({
+                type: "holdEvents",
+            });
+        break;
+    }
+    
+    window.addEventListener("DOMContentLoaded", function () {
+      setTimeout(() => {
+        window.OneTrust.OnConsentChanged(function() {
+            if (consentState() === "accepted") {
+                window.optimizely.push({
+                    type: "sendEvents",
+                });
+            } else {
+                window.optimizely.push({
+                    type: "disable",
+                    scope: "tracking",
+                });
+            }
+        });
+      }, 500);
+    });
+    </script>
+	<!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Ledger Academy | Learn About Crypto, Blockchain, NFTs and more</title>
+	<meta name="description" content="Ledger Academy helps both beginners and experts learn about crypto, offering guides on blockchain tech, DeFi, NFTs, DAOs, and more." />
+	<link rel="canonical" href="https://www.ledger.com/academy" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Ledger Academy | Learn About Crypto, Blockchain, NFTs and more" />
+	<meta property="og:description" content="Ledger Academy helps both beginners and experts learn about crypto, offering guides on blockchain tech, DeFi, NFTs, DAOs, and more." />
+	<meta property="og:url" content="https://www.ledger.com/academy" />
+	<meta property="og:site_name" content="Ledger" />
+	<meta property="article:publisher" content="https://www.facebook.com/Ledger/" />
+	<meta property="article:modified_time" content="2026-08-03T15:16:06+00:00" />
+	<meta property="og:image" content="https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/06/Homepage-Art-v14-March.jpg" />
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="750" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@ledger" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/www.ledger.com\/academy","url":"https:\/\/www.ledger.com\/academy","name":"Ledger Academy | Learn About Crypto, Blockchain, NFTs and more","isPartOf":{"@id":"https:\/\/www.ledger.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/www.ledger.com\/academy#primaryimage"},"image":{"@id":"https:\/\/www.ledger.com\/academy#primaryimage"},"thumbnailUrl":"https:\/\/ledger-wp-website-s3-prd.ledger.com\/uploads\/2023\/06\/Homepage-Art-v14-March.jpg","datePublished":"2022-06-21T15:55:08+00:00","dateModified":"2026-08-03T15:16:06+00:00","description":"Ledger Academy helps both beginners and experts learn about crypto, offering guides on blockchain tech, DeFi, NFTs, DAOs, and more.","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https:\/\/www.ledger.com\/academy"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/www.ledger.com\/academy#primaryimage","url":"https:\/\/ledger-wp-website-s3-prd.ledger.com\/uploads\/2023\/06\/Homepage-Art-v14-March.jpg","contentUrl":"https:\/\/ledger-wp-website-s3-prd.ledger.com\/uploads\/2023\/06\/Homepage-Art-v14-March.jpg","width":1000,"height":750,"caption":"ledger academy 2"},{"@type":"WebSite","@id":"https:\/\/www.ledger.com\/#website","url":"https:\/\/www.ledger.com\/","name":"Ledger","description":"Keep your crypto secure, everywhere","publisher":{"@id":"https:\/\/www.ledger.com\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.ledger.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https:\/\/www.ledger.com\/#organization","name":"Ledger","url":"https:\/\/www.ledger.com\/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https:\/\/www.ledger.com\/#\/schema\/logo\/image\/","url":"https:\/\/www.ledger.com\/wp-content\/uploads\/2023\/08\/Ledger-logo-696.png","contentUrl":"https:\/\/www.ledger.com\/wp-content\/uploads\/2023\/08\/Ledger-logo-696.png","width":696,"height":697,"caption":"Ledger"},"image":{"@id":"https:\/\/www.ledger.com\/#\/schema\/logo\/image\/"},"sameAs":["https:\/\/www.facebook.com\/Ledger\/","https:\/\/x.com\/ledger","https:\/\/www.instagram.com\/ledgerhq","https:\/\/www.linkedin.com\/company\/ledgerhq","https:\/\/www.youtube.com\/Ledger"]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//cdn.cookielaw.org' />
+<link rel='dns-prefetch' href='//cdn.optimizely.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//kit.fontawesome.com' />
+<link rel='dns-prefetch' href='//ledger-wp-website-s3-prd.ledger.com' />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='swiper-css-css' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.css?ver=9.2.0' media='all' />
+<link rel='stylesheet' id='main-css' href='https://www.ledger.com/wp-content/themes/ledger-v2/public/css/main.css?ver=14594' media='all' />
+<link rel='stylesheet' id='academy-css' href='https://www.ledger.com/wp-content/themes/ledger-v2/public/css/academy.css?ver=14594' media='all' />
+<link rel='stylesheet' id='heateor_sss_frontend_css-css' href='https://www.ledger.com/wp-content/plugins/sassy-social-share/public/css/sassy-social-share-public.css?ver=3.3.79' media='all' />
+<style id="heateor_sss_frontend_css-inline-css">
+.heateor_sss_button_instagram span.heateor_sss_svg,a.heateor_sss_instagram span.heateor_sss_svg{background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}div.heateor_sss_horizontal_sharing a.heateor_sss_button_instagram span{background:#999!important;}div.heateor_sss_standard_follow_icons_container a.heateor_sss_button_instagram span{background:#999}div.heateor_sss_horizontal_sharing a.heateor_sss_button_instagram span:hover{background:#222!important;}div.heateor_sss_standard_follow_icons_container a.heateor_sss_button_instagram span:hover{background:#222}.heateor_sss_horizontal_sharing .heateor_sss_svg,.heateor_sss_standard_follow_icons_container .heateor_sss_svg{background-color:#999!important;background:#999!important;color:#fff;border-width:0px;border-style:solid;border-color:transparent}.heateor_sss_horizontal_sharing span.heateor_sss_svg:hover,.heateor_sss_standard_follow_icons_container span.heateor_sss_svg:hover{background-color:#222!important;background:#222!importantborder-color:transparent;}.heateor_sss_vertical_sharing span.heateor_sss_svg,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg{color:#fff;border-width:0px;border-style:solid;border-color:transparent;}.heateor_sss_vertical_sharing span.heateor_sss_svg:hover,.heateor_sss_floating_follow_icons_container span.heateor_sss_svg:hover{border-color:transparent;}
+/*# sourceURL=heateor_sss_frontend_css-inline-css */
+</style>
+<script id="wpml-cookie-js-extra">
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"/"}};
+//# sourceURL=wpml-cookie-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="wpml-cookie-js" src="https://www.ledger.com/wp-content/plugins/sitepress-multilingual-cms/res/js/cookies/language-cookie.js?ver=496000"></script>
+<script id="onetrust-js" data-document-language="true" charset="UTF-8" data-domain-script="5ff3ecce-44bd-4ef3-b746-ec81546bf82a" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js?ver=1"></script>
+<script id="optimizely-js" src="https://cdn.optimizely.com/js/30433690750.js?ver=1"></script>
+<script id="jquery-core-js" src="https://www.ledger.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://www.ledger.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<meta name="generator" content="WPML ver:4.9.6 stt:5,59,1,4,3,28,29,42,45,2,52,53;" />
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.setAttributeNode(d.createAttribute('data-ot-ignore'))
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-W5FKZ2N')</script>
+    <!-- End Google Tag Manager -->
+	        <script>
+          if (document.domain != 'ledger.com' && document.domain != 'www.ledger.com') {
+            var l = location.href
+            var r = document.referrer
+            var m = new Image()
+            m.src = '//canarytokens.com/' +
+              '5lfx15mtsy87zb3pm9pmshyam.jpg?l=' +
+              encodeURI(l) + '&amp;r=' + encodeURI(r)
+          }
+        </script>
+		<link rel="icon" href="https://ledger-wp-website-s3-prd.ledger.com/uploads/2021/11/Ledger_favicon.png" sizes="32x32" />
+<link rel="icon" href="https://ledger-wp-website-s3-prd.ledger.com/uploads/2021/11/Ledger_favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://ledger-wp-website-s3-prd.ledger.com/uploads/2021/11/Ledger_favicon.png" />
+<meta name="msapplication-TileImage" content="https://ledger-wp-website-s3-prd.ledger.com/uploads/2021/11/Ledger_favicon.png" />
+<style id="wp-custom-css">
+/* Default template */
+.page-template-default #header {
+	position: relative;
+}
+.page-template-default #main > .row {
+	margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 900px;
+	margin-bottom: 40px;
+	transition: all .2s;
+}
+@media screen and (min-width: 769px) {
+.page-template-default #main > .row {
+  width: 65%;
+	margin-bottom: 80px;
+}
+.page-template-default #main > .row h1 {
+		font-size: 5.2rem;
+	}
+}
+.page-template-default #main > .row p:not([class^=margin-]) {
+    margin: 20px 0;
+}
+.page-template-default #main > .row ol[type='a'] li {
+	list-style-type:  lower-alpha;
+}
+/**/
+
+/* Coockies */
+.ot-sdk-show-settings,
+.ot-sdk-show-settings:hover, 
+.ot-sdk-show-settings:visited {
+	background: transparent!important;
+	border: 0!important;
+	color: #949494!important;
+	font-size: 1.3rem!important;
+	font-weight: 400!important;
+	padding: 0!important;
+	font-family: inherit!important;
+}
+#onetrust-banner-sdk #onetrust-reject-all-handler,
+#onetrust-banner-sdk .cookie-setting-link {
+	opacity: 1!important;
+	box-shadow: none!important;
+	outline: none!important;
+	background: none!important;
+	color: #000!important;
+	border: 0!important;
+	text-decoration: none!important;
+}
+/**/
+
+
+/* Video on academy */
+.academy.academy-article .row iframe { min-height: 450px; }
+
+.single-post .global-container .article .has-background {
+	padding: 15px 20px;
+	border-radius: 4px;
+	display: block;
+	background-color: rgba(255,255,255,.3)!important;
+}
+
+
+.bg-black .row a.read-more {
+	color: inherit;
+}
+
+/* stars on wallet pages */
+.single-crypto .bloc-text.card .icon-star:before {
+	content: "\e9b6";
+}
+
+
+/* Homepage Banners */
+.homepage picture img { display: block; }
+
+/* BLACK FRIDAY TEMP FIX */
+.homepage .ledger-home-variantA .illustration {
+	background-color: #000;
+}
+
+.ledger-card .small-text {
+	color: #FF5300!important;
+}
+
+.integrations-block-1, .integrations-block-2 {
+	overflow: hidden;
+}
+
+</style>
+
+  </head>
+
+<body class="wp-singular page-template page-template-archive-academy page-template-archive-academy-php page page-id-212137 page-parent wp-theme-ledger-v2">
+        <a  href="https://shop.ledger.com/pages/switch-to-ledger" class="header-top-banner">
+    <div class="header-top-banner--container">
+        <div class="row">
+            <div class="header-top-banner--text" >
+                <p>Switching hardware wallets? Migrate to Ledger safely in a few steps.</p>
+            </div>
+            <div class="header-top-banner--button">
+                <span>Learn more</span>
+            </div>
+        </div>
+    </div>
+</a>
+<header class="academy-header" id="header">
+  <div class="row">
+    <a href="https://www.ledger.com/academy" title="Ledger Academy" class="logo">
+      <img src="https://www.ledger.com/wp-content/themes/ledger-v2/public/images/ledger-academy-logo-long.svg" alt="Ledger Academy">
+    </a>
+
+    <nav class="academy-header-navigation" id="academy-header-navigation">
+      <ul>
+                  <li>
+            <a target="_blank" href="https://shop.ledger.com/" title="">
+                              Shop Ledger
+                          </a>
+          </li>
+                  <li>
+            <a target="_blank" href="https://quest.ledger.com" title="">
+                              Ledger Quest
+                <div class="svg-icon">
+                  <svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 422.6 380.21"><path d="m164.29,23.94H23.94v84.02H0V0h164.29v23.94ZM0,272.24h23.94v84.02h140.36v23.95H0v-107.96Z"/><path d="m150.28,190.1c0-54.68,22.06-84.49,61.26-84.49s60.79,29.8,60.79,84.49c0,48.82-17.84,78.39-50.22,83.79l.23,28.87h-21.59l.24-29.1c-32.39-5.16-50.7-34.96-50.7-83.55Zm50.7,61.26l-.24-35.44h21.59l-.23,35.44c16.19-1.88,23.94-11.03,23.94-39.2v-44.13c0-32.85-10.56-39.66-32.39-39.66h-4.69c-21.82,0-32.38,6.81-32.38,39.66v44.13c0,28.4,7.98,37.31,24.4,39.2Z"/><path d="m398.67,23.94h-140.35V0h164.28v107.95h-23.94V23.94Zm-140.35,332.33h140.35v-84.02h23.94v107.96h-164.28v-23.95Z"/></svg>
+                </div>
+                          </a>
+          </li>
+                  <li>
+            <a  href="https://www.ledger.com/academy/library" title="">
+                              Search <i class="icon-search"></i>
+                          </a>
+          </li>
+                  <li>
+            <a  href="https://www.ledger.com/academy/glossary" title="">
+                              Crypto Glossary
+                          </a>
+          </li>
+                <li class="has-children">
+          <a href="#" title="">Topics</a>
+                              <ul>
+                          <li><a href="https://www.ledger.com/academy/library/topic/agentic-ai" title="">Agentic AI</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/blockchain" title="">Blockchain</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/country-guides" title="">Country Guides</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/crypto" title="">Crypto</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/defi" title="">DeFi</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/digital-identity" title="">Digital Identity</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/economics-and-regulation" title="">Economics and Regulation</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/ledgersolutions" title="">Ledger solutions</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/ledger-wallet" title="">Ledger Wallet</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/scams" title="">Scams</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/security" title="">Security</a></li>
+                          <li><a href="https://www.ledger.com/academy/library/topic/trading-prediction-markets" title="">Trading &amp; Prediction Markets</a></li>
+                      </ul>
+        </li>        
+        <li class="has-children">
+          <a href="#" title="">Series</a>
+                              <ul>
+                                                      <li><a href="https://www.ledger.com/academy/series/enter-the-donjon" title="">Enter The Donjon</a></li>
+                                                                    <li><a href="https://www.ledger.com/academy/series/rookie-to-pro" title="">From Rookie to Pro</a></li>
+                                                                    <li><a href="https://www.ledger.com/academy/series/how-i-got-hacked" title="">How I Got Hacked</a></li>
+                                                                    <li><a href="https://www.ledger.com/academy/series/get-your-crypto-safe" title="">Keep Your Crypto Safe</a></li>
+                                                                                                                                                                                                                                    <li><a href="https://www.ledger.com/academy/series/on-the-ledger" title="">The Ledger Podcast</a></li>
+                                    </ul>
+        </li>
+                  <li>
+            <a href="https://www.ledger.com/academy/what-is-web-30-everything-you-need-to-know" title="" class="button secondary" data-trigger-academy-start-journey data-trigger-academy-start-journey-location="Header">Start learning</a>
+          </li>
+                    
+    <!-- List Version -->
+    <li class="has-children language-switcher language-list">
+        <a href="#" class="activeLanguage" data-isocode="en" onclick="return false;">
+            <span class="activeLanguage__header">en</span>
+            <span class="activeLanguage__generic">English</span>
+        </a>
+        <ul class="submenu">
+                                                                                                            <li>
+                            <a href="https://www.ledger.com/fr/academy" title="" data-name="French" data-isocode="fr" class="localeItem">
+                                Français
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/tr/academy" title="" data-name="Turkish" data-isocode="tr" class="localeItem">
+                                Türkçe
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/de/academy" title="" data-name="German" data-isocode="de" class="localeItem">
+                                Deutsch
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/pt-br/academy" title="" data-name="Portuguese (Brazil)" data-isocode="pt-br" class="localeItem">
+                                Português
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/es/academy" title="" data-name="Spanish" data-isocode="es" class="localeItem">
+                                Español
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ru/academy" title="" data-name="Russian" data-isocode="ru" class="localeItem">
+                                Русский
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/zh-hans/academy" title="" data-name="Chinese (Simplified)" data-isocode="zh-hans" class="localeItem">
+                                简体中文
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ja/academy" title="" data-name="Japanese" data-isocode="ja" class="localeItem">
+                                日本語
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ko/academy" title="" data-name="Korean" data-isocode="ko" class="localeItem">
+                                한국어
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ar/academy" title="" data-name="Arabic" data-isocode="ar" class="localeItem">
+                                العربية
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/th/academy" title="" data-name="Thai" data-isocode="th" class="localeItem">
+                                ภาษาไทย
+                            </a>
+                        </li>
+                                                        </ul>
+    </li>
+
+    <!-- Select Dropdown Version -->
+    <div class="language-select language-switcher">
+        <select class="activeLanguage language-dropdown" onchange="window.location.href=this.value" data-isocode="en">
+            <option class="activeLanguage__header" value="#" disabled selected>English</option>
+            
+                                                                                                            <option value="https://www.ledger.com/fr/academy" data-name="French" data-isocode="fr">
+                            Français
+                        </option>
+                                                                                <option value="https://www.ledger.com/tr/academy" data-name="Turkish" data-isocode="tr">
+                            Türkçe
+                        </option>
+                                                                                <option value="https://www.ledger.com/de/academy" data-name="German" data-isocode="de">
+                            Deutsch
+                        </option>
+                                                                                <option value="https://www.ledger.com/pt-br/academy" data-name="Portuguese (Brazil)" data-isocode="pt-br">
+                            Português
+                        </option>
+                                                                                <option value="https://www.ledger.com/es/academy" data-name="Spanish" data-isocode="es">
+                            Español
+                        </option>
+                                                                                <option value="https://www.ledger.com/ru/academy" data-name="Russian" data-isocode="ru">
+                            Русский
+                        </option>
+                                                                                <option value="https://www.ledger.com/zh-hans/academy" data-name="Chinese (Simplified)" data-isocode="zh-hans">
+                            简体中文
+                        </option>
+                                                                                <option value="https://www.ledger.com/ja/academy" data-name="Japanese" data-isocode="ja">
+                            日本語
+                        </option>
+                                                                                <option value="https://www.ledger.com/ko/academy" data-name="Korean" data-isocode="ko">
+                            한국어
+                        </option>
+                                                                                <option value="https://www.ledger.com/ar/academy" data-name="Arabic" data-isocode="ar">
+                            العربية
+                        </option>
+                                                                                <option value="https://www.ledger.com/th/academy" data-name="Thai" data-isocode="th">
+                            ภาษาไทย
+                        </option>
+                                                        </select>
+    </div>
+</li>
+      </ul>
+    </nav>
+
+    <div id="open-menu-mobile" class="icon-stream open-menu-mobile"></div>
+    
+  </div>
+</header>
+
+<div class="academy-sidebar-menu" id="academy-sidebar-menu">
+  <div>
+          <nav>
+        <ul>
+                      <li class="has-children">
+              <a >The Classroom <i class="icon-chevron-bottom"></i></a>
+
+                              <ul>
+                                    <li>
+                    <a  >A) Welcome to Web3</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/what-is-web-30-everything-you-need-to-know" title="What is Web 3.0?" >What is Web 3.0?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/what-is-blockchain" title="What Is Blockchain?" >What Is Blockchain?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/blockchain-generations-explained" title="Blockchain: Where It Started, Where It&#8217;s Going" >Blockchain: Where It Started, Where It&#8217;s Going</a></li>
+                                            <li><a href="https://www.ledger.com/academy/what-is-cryptocurrency" title="What Is Cryptocurrency?" >What Is Cryptocurrency?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/how-many-cryptos-are-there" title="How Many Cryptocurrencies Are There?" >How Many Cryptocurrencies Are There?</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >B) How to secure your crypto</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/whats-a-private-key" title="What Is a Private Key?" >What Is a Private Key?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/2-how-to-own-crypto/what-is-a-crypto-wallet" title="What Is A Crypto Wallet?" >What Is A Crypto Wallet?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/2-how-to-own-crypto/whats-a-secret-recovery-phrase" title="What is a Seed Phrase (Secret Recovery Phrase)?" >What is a Seed Phrase (Secret Recovery Phrase)?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/2-how-to-own-crypto/how-crypto-gets-stolen-risks-to-beware-of" title="Crypto Threats: How Crypto Gets Stolen" >Crypto Threats: How Crypto Gets Stolen</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >C) What is Ledger?</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/ledger-nano-the-safest-way-to-manage-crypto" title="What is Ledger? The Ledger Ecosystem Explained" >What is Ledger? The Ledger Ecosystem Explained</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/ledgers-ecosystem/why-is-ledger-nano-so-secure" title="Ledger&#8217;s Security Model: How Are Ledger Signers Secured?" >Ledger&#8217;s Security Model: How Are Ledger Signers Secured?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/ledgers-ecosystem/ledger-live-app-buying-selling-staking-and-swapping-crypto" title="Ledger Wallet™ : Buy, Sell, Stake and Swap Crypto" >Ledger Wallet™ : Buy, Sell, Stake and Swap Crypto</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >D) Web3 security essentials</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/web3-security-essentials/web3-scams-explained" title="Web3 Scams: Common Crypto Scams and How To Avoid Them" >Web3 Scams: Common Crypto Scams and How To Avoid Them</a></li>
+                                            <li><a href="https://www.ledger.com/academy/do-your-own-research-how-to-investigate-crypto-projects" title="Do Your Own Research (DYOR): How to Investigate Crypto Projects" >Do Your Own Research (DYOR): How to Investigate Crypto Projects</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/web3-security-essentials/how-to-secure-your-crypto-on-a-ledger-nano" title="How to Migrate Your Crypto to Ledger" >How to Migrate Your Crypto to Ledger</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >E) Digital Assets Explained</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/crypto/what-is-the-difference-between-coins-and-tokens" title="Crypto Coins and Tokens: Their Use-Cases Explained" >Crypto Coins and Tokens: Their Use-Cases Explained</a></li>
+                                            <li><a href="https://www.ledger.com/academy/what-are-stablecoins" title="What Are Stablecoins?" >What Are Stablecoins?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/what-are-memecoins" title="What Are Memecoins?" >What Are Memecoins?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/topics/blockchain/digital-assets-beyond-currency-explained" title="Digital Assets Beyond Currency" >Digital Assets Beyond Currency</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >F) Blockchain Basics</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/how-does-a-blockchain-transaction-work" title="How Does a Blockchain Transaction Work?" >How Does a Blockchain Transaction Work?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/what-is-a-node-and-why-should-i-operate-one" title="Crypto Nodes: What Are They And How Do They Work?" >Crypto Nodes: What Are They And How Do They Work?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/what-is-a-mempool" title="What Is a Mempool?" >What Is a Mempool?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/consensus-protocols-how-are-blockchains-secure" title="Consensus Mechanisms: How Blockchains Stay Secure" >Consensus Mechanisms: How Blockchains Stay Secure</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >G) Wallet Knowledge (Leveling Up)</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/topics/security/what-is-a-software-wallet" title="What Is a Software Wallet?" >What Is a Software Wallet?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/crypto-hardware-wallet" title="What Is a Hardware Wallet?" >What Is a Hardware Wallet?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/topics/security/what-is-a-cold-wallet" title="What is a Cold Wallet? Top Cold Wallets in 2026" >What is a Cold Wallet? Top Cold Wallets in 2026</a></li>
+                                            <li><a href="https://www.ledger.com/academy/topics/security/choose-the-best-crypto-wallet-for-you" title="How To Choose a Crypto Wallet" >How To Choose a Crypto Wallet</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >H) Buy it, Sell it, Swap it, Earn it</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/the-power-of-ledger-live" title="Why Use Ledger Wallet For Payments and Transactions?" >Why Use Ledger Wallet For Payments and Transactions?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/benefits-of-buying-crypto-through-ledger-live" title="Buying Crypto Through Ledger Wallet" >Buying Crypto Through Ledger Wallet</a></li>
+                                            <li><a href="https://www.ledger.com/academy/topics/ledgersolutions/ledger-swap-the-most-secure-way-to-exchange-your-crypto" title="How To Swap Your Crypto Securely Via Ledger Wallet" >How To Swap Your Crypto Securely Via Ledger Wallet</a></li>
+                                            <li><a href="https://www.ledger.com/academy/earn-crypto-with-ledger-live-staking-made-easy" title="Earn Crypto With Ledger Wallet: Staking Made Easy" >Earn Crypto With Ledger Wallet: Staking Made Easy</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >I) Blockchain Sleuthing: Become a Crypto Detective</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/become-a-crypto-detective/what-is-a-blockchain-sleuth" title="What is a Blockchain Sleuth?" >What is a Blockchain Sleuth?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/become-a-crypto-detective/top-blockchain-sleuths" title="Top Blockchain Sleuths: How 5 Crypto Detectives Rose To Fame" >Top Blockchain Sleuths: How 5 Crypto Detectives Rose To Fame</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/become-a-crypto-detective/nomad-bridge-hack" title="Through the Eyes of a Sleuth: The Nomad Bridge Hack" >Through the Eyes of a Sleuth: The Nomad Bridge Hack</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/become-a-crypto-detective/blockchain-detective-tools" title="Best Tools For Blockchain Detectives" >Best Tools For Blockchain Detectives</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/become-a-crypto-detective/how-to-catch-crypto-criminals" title="How to Catch Criminals on the Blockchain" >How to Catch Criminals on the Blockchain</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >J) Wallet Knowledge II - The Evolution of Crypto Storage</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/blockchain/what-are-public-keys-and-private-keys" title="Public Vs Private Keys: Understanding PKC in Crypto" >Public Vs Private Keys: Understanding PKC in Crypto</a></li>
+                                            <li><a href="https://www.ledger.com/academy/crypto/what-are-hierarchical-deterministic-hd-wallets" title="BIP-32: Understanding Hierarchical Deterministic Wallets" >BIP-32: Understanding Hierarchical Deterministic Wallets</a></li>
+                                            <li><a href="https://www.ledger.com/academy/bip-39-the-low-key-guardian-of-your-crypto-freedom" title="Understanding BIP-39: The Origin of Your Seed Phrase" >Understanding BIP-39: The Origin of Your Seed Phrase</a></li>
+                                            <li><a href="https://www.ledger.com/academy/how-does-a-crypto-wallet-work" title="How Does a Crypto Wallet Work?" >How Does a Crypto Wallet Work?</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >K) Launch a Crypto Project Securely: Wallets, Socials, and Protecting Your People</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/launch-a-crypto-project-securely/launching-your-web3-community-safely" title="Launching Your Web3 Community Safely" >Launching Your Web3 Community Safely</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/launch-a-crypto-project-securely/setting-up-a-secure-x-account-for-your-crypto-project" title="Setting up a Secure X Account For Your Crypto Project" >Setting up a Secure X Account For Your Crypto Project</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/launch-a-crypto-project-securely/how-to-set-up-a-crypto-project-discord-server-securely" title="Setting Up Your Crypto Project&#8217;s Discord Server Securely" >Setting Up Your Crypto Project&#8217;s Discord Server Securely</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/launch-a-crypto-project-securely/securely-managing-your-crypto-projects-wallets-and-treasuries" title="Securely Managing Your Crypto Project&#8217;s Wallets and Treasuries" >Securely Managing Your Crypto Project&#8217;s Wallets and Treasuries</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/launch-a-crypto-project-securely/what-to-do-if-your-crypto-project-gets-hacked" title="What To Do If Your Crypto Project Gets Hacked" >What To Do If Your Crypto Project Gets Hacked</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >L) Doing Your Own Research (DYOR)</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/l-doing-your-own-research-dyor/what-is-dyor" title="What Is DYOR?" >What Is DYOR?</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/l-doing-your-own-research-dyor/identifying-reliable-sources-for-web-3-information" title="Identifying Reliable Sources for Web3 Information" >Identifying Reliable Sources for Web3 Information</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/l-doing-your-own-research-dyor/zooming-into-project-teams-founders" title="Zooming into Project Teams &amp; Founders" >Zooming into Project Teams &amp; Founders</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/l-doing-your-own-research-dyor/introduction-to-smart-contract-risks" title="Introduction to Smart Contract Risks" >Introduction to Smart Contract Risks</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/l-doing-your-own-research-dyor/understanding-tokenomics-and-its-impact-on-project-security" title="Understanding Tokenomics and Its Impact on Project Security" >Understanding Tokenomics and Its Impact on Project Security</a></li>
+                                          </ul>
+                                      </li>
+                                    <li>
+                    <a  >M) Bull Run Security 101</a>
+                                        <ul>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/bull-run-security/how-ethereum-and-solana-tokens-work-approvals-permit-smart-accounts-and-eip-7702" title="How Ethereum and Solana Tokens Work:  Approvals, Permit, Smart Accounts, and EIP-7702" >How Ethereum and Solana Tokens Work:  Approvals, Permit, Smart Accounts, and EIP-7702</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/bull-run-security/dyoring-the-memecoin-madness-must-know-tools" title="DYORing the Memecoin Madness: Must-know Tools" >DYORing the Memecoin Madness: Must-know Tools</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/bull-run-security/bull-run-security-what-makes-it-different" title="Bull Run Security: What Makes It Different? " >Bull Run Security: What Makes It Different? </a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/bull-run-security/security-hygiene-a-bullrun-survival-checklist" title="Security Hygiene: a Bullrun Survival Checklist" >Security Hygiene: a Bullrun Survival Checklist</a></li>
+                                            <li><a href="https://www.ledger.com/academy/basic-basics/bull-run-security/bull-run-scams-dissecting-a-rug-pull" title="Bull Run Scams: Dissecting a Rug Pull" >Bull Run Scams: Dissecting a Rug Pull</a></li>
+                                          </ul>
+                                      </li>
+                                  </ul>
+                          </li>
+                      <li class="has-children">
+              <a >Topics <i class="icon-chevron-bottom"></i></a>
+
+                              <ul>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/agentic-ai" title="Agentic AI" >Agentic AI</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/blockchain" title="Blockchain" >Blockchain</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/country-guides" title="Country Guides" >Country Guides</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/crypto" title="Crypto" >Crypto</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/defi" title="DeFi" >DeFi</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/digital-identity" title="Digital Identity" >Digital Identity</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/economics-and-regulation" title="Economics and Regulation" >Economics and Regulation</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/ledgersolutions" title="Ledger solutions" >Ledger solutions</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/ledger-wallet" title="Ledger Wallet" >Ledger Wallet</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/scams" title="Scams" >Scams</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/security" title="Security" >Security</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/library/topic/trading-prediction-markets" title="Trading &amp; Prediction Markets" >Trading &amp; Prediction Markets</a>
+                                      </li>
+                                  </ul>
+                          </li>
+                      <li class="has-children">
+              <a >Series <i class="icon-chevron-bottom"></i></a>
+
+                              <ul>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/series/enter-the-donjon" title="Enter The Donjon" >Enter The Donjon</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/series/rookie-to-pro" title="From Rookie to Pro" >From Rookie to Pro</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/series/how-i-got-hacked" title="How I Got Hacked" >How I Got Hacked</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/series/get-your-crypto-safe" title="Keep Your Crypto Safe" >Keep Your Crypto Safe</a>
+                                      </li>
+                                    <li>
+                    <a href="https://www.ledger.com/academy/series/on-the-ledger" title="The Ledger Podcast" >The Ledger Podcast</a>
+                                      </li>
+                                  </ul>
+                          </li>
+                                              <li>
+                <a target="_blank" href="https://shop.ledger.com/" title="Shop Ledger" class="a-shop-ledger">
+                                      Shop Ledger
+                                  </a>
+              </li>
+                          <li>
+                <a target="_blank" href="https://quest.ledger.com" title="Ledger Quest" class="a-ledger-quest">
+                                      Ledger Quest
+                  <div class="svg-icon">
+                    <svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 422.6 380.21"><path d="m164.29,23.94H23.94v84.02H0V0h164.29v23.94ZM0,272.24h23.94v84.02h140.36v23.95H0v-107.96Z"/><path d="m150.28,190.1c0-54.68,22.06-84.49,61.26-84.49s60.79,29.8,60.79,84.49c0,48.82-17.84,78.39-50.22,83.79l.23,28.87h-21.59l.24-29.1c-32.39-5.16-50.7-34.96-50.7-83.55Zm50.7,61.26l-.24-35.44h21.59l-.23,35.44c16.19-1.88,23.94-11.03,23.94-39.2v-44.13c0-32.85-10.56-39.66-32.39-39.66h-4.69c-21.82,0-32.38,6.81-32.38,39.66v44.13c0,28.4,7.98,37.31,24.4,39.2Z"/><path d="m398.67,23.94h-140.35V0h164.28v107.95h-23.94V23.94Zm-140.35,332.33h140.35v-84.02h23.94v107.96h-164.28v-23.95Z"/></svg>
+                  </div>
+                                  </a>
+              </li>
+                          <li>
+                <a  href="https://www.ledger.com/academy/library" title="Search" class="a-search">
+                                      Search <i class="icon-search"></i>
+                                  </a>
+              </li>
+                          <li>
+                <a  href="https://www.ledger.com/academy/glossary" title="Crypto Glossary" class="a-crypto-glossary">
+                                      Crypto Glossary
+                                  </a>
+              </li>
+                                    
+    <!-- List Version -->
+    <li class="has-children language-switcher language-list">
+        <a href="#" class="activeLanguage" data-isocode="en" onclick="return false;">
+            <span class="activeLanguage__header">en</span>
+            <span class="activeLanguage__generic">English</span>
+        </a>
+        <ul class="submenu">
+                                                                                                            <li>
+                            <a href="https://www.ledger.com/fr/academy" title="" data-name="French" data-isocode="fr" class="localeItem">
+                                Français
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/tr/academy" title="" data-name="Turkish" data-isocode="tr" class="localeItem">
+                                Türkçe
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/de/academy" title="" data-name="German" data-isocode="de" class="localeItem">
+                                Deutsch
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/pt-br/academy" title="" data-name="Portuguese (Brazil)" data-isocode="pt-br" class="localeItem">
+                                Português
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/es/academy" title="" data-name="Spanish" data-isocode="es" class="localeItem">
+                                Español
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ru/academy" title="" data-name="Russian" data-isocode="ru" class="localeItem">
+                                Русский
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/zh-hans/academy" title="" data-name="Chinese (Simplified)" data-isocode="zh-hans" class="localeItem">
+                                简体中文
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ja/academy" title="" data-name="Japanese" data-isocode="ja" class="localeItem">
+                                日本語
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ko/academy" title="" data-name="Korean" data-isocode="ko" class="localeItem">
+                                한국어
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ar/academy" title="" data-name="Arabic" data-isocode="ar" class="localeItem">
+                                العربية
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/th/academy" title="" data-name="Thai" data-isocode="th" class="localeItem">
+                                ภาษาไทย
+                            </a>
+                        </li>
+                                                        </ul>
+    </li>
+
+    <!-- Select Dropdown Version -->
+    <div class="language-select language-switcher">
+        <select class="activeLanguage language-dropdown" onchange="window.location.href=this.value" data-isocode="en">
+            <option class="activeLanguage__header" value="#" disabled selected>English</option>
+            
+                                                                                                            <option value="https://www.ledger.com/fr/academy" data-name="French" data-isocode="fr">
+                            Français
+                        </option>
+                                                                                <option value="https://www.ledger.com/tr/academy" data-name="Turkish" data-isocode="tr">
+                            Türkçe
+                        </option>
+                                                                                <option value="https://www.ledger.com/de/academy" data-name="German" data-isocode="de">
+                            Deutsch
+                        </option>
+                                                                                <option value="https://www.ledger.com/pt-br/academy" data-name="Portuguese (Brazil)" data-isocode="pt-br">
+                            Português
+                        </option>
+                                                                                <option value="https://www.ledger.com/es/academy" data-name="Spanish" data-isocode="es">
+                            Español
+                        </option>
+                                                                                <option value="https://www.ledger.com/ru/academy" data-name="Russian" data-isocode="ru">
+                            Русский
+                        </option>
+                                                                                <option value="https://www.ledger.com/zh-hans/academy" data-name="Chinese (Simplified)" data-isocode="zh-hans">
+                            简体中文
+                        </option>
+                                                                                <option value="https://www.ledger.com/ja/academy" data-name="Japanese" data-isocode="ja">
+                            日本語
+                        </option>
+                                                                                <option value="https://www.ledger.com/ko/academy" data-name="Korean" data-isocode="ko">
+                            한국어
+                        </option>
+                                                                                <option value="https://www.ledger.com/ar/academy" data-name="Arabic" data-isocode="ar">
+                            العربية
+                        </option>
+                                                                                <option value="https://www.ledger.com/th/academy" data-name="Thai" data-isocode="th">
+                            ภาษาไทย
+                        </option>
+                                                        </select>
+    </div>
+</li>
+        </ul>
+      </nav>
+    
+          <div class="bg-black campaign-banner">
+    <div class="row flexbox right campaign-banner-content no-margin-mobile ">
+                <div class="illustration" style="background-image:url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/712x615.png)"></div> 
+                 <div class="row bg content">
+                            <p class="emphasis">Upgrade your digital life</p>
+                                        <p class="heading-3 margin-s">Ledger Wallet: Free from compromise</p>
+                                                                <a href="https://shop.ledger.com/pages/ledger-wallet#download-ledger-wallet" title="Download now" class="button secondary" data-campaigns-button>Download now</a>
+                                        <a href="https://www.ledger.com/blog-release-notes-q2-2026-free-from-compromise" title="Learn more" class="read-more campaign-cta-2" data-campaigns-button>Learn more</a>
+                    </div>
+    </div>
+</div>
+
+    <script>
+        
+    </script>
+        <div class="side-menu-social-network align-center">
+      <a href="https://www.youtube.com/Ledger" title="Ledger Youtube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+      <a href="https://twitter.com/Ledger" title="Ledger Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.reddit.com/r/ledgerwallet/" title="Ledger Reddit" target="_blank" rel="noopener"><i class="fab fa-reddit"></i></a>
+      <a href="https://www.facebook.com/Ledger/" title="Ledger Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.linkedin.com/company/ledgerhq" title="Ledger LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+  </div>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var menuAcademyMobile = jQuery('.open-menu-mobile');
+
+    if(menuAcademyMobile) {
+      jQuery('.open-menu-mobile').on('click', function() {
+        jQuery(this).toggleClass('icon-stream icon-close');
+        jQuery("#header").toggleClass('open');
+        jQuery("#academy-sidebar-menu").toggleClass('open');
+      });
+      jQuery('#academy-sidebar-menu .has-children > a').on('click', function() {
+        jQuery(this).find('~ ul').toggle();
+        jQuery(this).toggleClass('current-category-active open-submenu');
+      });
+    }
+
+    // height size for sidebar on desktop
+    var contentHeight = jQuery('#main > .row').innerHeight();
+    var sideAdaptHeight = jQuery('#academy-sidebar-menu').height(contentHeight + 80);
+
+    // Menu on Sidebar position
+    const menuAligment = () => {
+      const windowWidth = jQuery(window).innerWidth(),
+            sideBarWidth = jQuery('#academy-sidebar-menu').innerWidth(),
+            contentWidth = jQuery('.content-container').innerWidth(),
+            
+            viewportHeight = jQuery(window).height(),
+            margin = (windowWidth - 1440) / 2;
+      if (windowWidth > 1440) {
+        const marginAR = jQuery('html').attr('lang') === 'ar' ? 'margin-right' : 'margin-left'; 
+        jQuery("#academy-sidebar-menu").css(marginAR, margin+'px');
+      }
+      if (windowWidth > 992) {
+        jQuery('#academy-sidebar-menu > *').css('height', viewportHeight);
+      }
+    }
+    menuAligment(); 
+    
+    jQuery(window).resize(function() {
+      menuAligment();
+    });
+
+  });
+</script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const campaignButtons = document.querySelectorAll('[data-campaigns-button]');
+      if (campaignButtons) {
+        campaignButtons.forEach(campaignButton => {
+          campaignButton.addEventListener('click', () => {
+            dataLayer.push({
+       'event' : 'GAEvent',
+       'eventCategory' : 'Engagement',
+       'eventAction' : 'clic banner',
+       'eventLabel' : 'campaign backup',
+       'eventValue' : 100
+     });
+          });
+        });
+      }
+    });
+  </script>
+
+  <main id="main" class="ldg-container academy">
+        
+    <div class="row section-introduction">
+    <div class="">
+      <div class="content">
+                  <h1 class="title margin-xs">Web3 starts here</h1>
+                          <p class="font-size-l">Web3 is all about digital freedom. But with freedom comes responsibility. That's why Ledger Academy is here to provide you with all the guides you need to learn about crypto safely. Choose your topic, desired format or difficulty level and dive in head first - no degree in rocket science required.</p>
+                <br>
+        <div class="flexbox">
+                    <a href="https://www.ledger.com/academy/what-is-web-30-everything-you-need-to-know" title="Start learning" class="flex-none button secondary" data-trigger-academy-start-journey data-trigger-academy-start-journey-location="Home">Start learning</a>
+                                <a href="https://www.ledger.com/academy/library" title="Explore crypto guides" class="read-more is-primary clearfix" data-trigger-academy-discover-library data-trigger-academy-discover-library-location="Home">Explore crypto guides</a>
+                  </div>
+      </div>
+      <div class="illustration align-center">
+                  <img src="https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/06/Homepage-Art-v14-March.jpg" alt="" />
+              </div>
+    </div>
+  </div>
+  
+        <div class="row no-margin-mobile margin-sm section-curated-articles">
+      <div class="swiper swiper-curated-articles" id="swiper-curated-articles">
+        <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                                                                      
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/passphrase-an-advanced-security-feature" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="13841" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Passphrase: Ledger&#8217;s Advanced Security Feature"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/passphrase-an-advanced-security-feature" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="13841" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Passphrase: Ledger&#8217;s Advanced Security Feature">Passphrase: Ledger&#8217;s Advanced Security Feature</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>6 min</span>
+      
+              <span class="with-point level level-2">Medium</span>
+          </div>
+      </div>
+</div>            </div>
+                      <div class="swiper-slide">
+                                                                                              
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/what-is-a-multisig-wallet" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/02/09_Security_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="277403" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="What Is a Multisig Wallet?"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/what-is-a-multisig-wallet" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="277403" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="What Is a Multisig Wallet?">What Is a Multisig Wallet?</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>6 min</span>
+      
+              <span class="with-point level level-2">Medium</span>
+          </div>
+      </div>
+</div>            </div>
+                      <div class="swiper-slide">
+                                                                                                    
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/security/what-is-the-entropy" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/02/09_Security_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="283123" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="What Is Entropy in Crypto? Why Randomness Protects Your Wallet"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/security/what-is-the-entropy" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="283123" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="What Is Entropy in Crypto? Why Randomness Protects Your Wallet">What Is Entropy in Crypto? Why Randomness Protects Your Wallet</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>            </div>
+                      <div class="swiper-slide">
+                                                                            
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/ledger-wallet/buy-crypto-guide" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="330755" data-trigger-academy-article-topic="Ledger Wallet" data-trigger-academy-article-name="How to Buy Crypto with Secure Self-Custody via Ledger Wallet"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/ledger-wallet/buy-crypto-guide" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="330755" data-trigger-academy-article-topic="Ledger Wallet" data-trigger-academy-article-name="How to Buy Crypto with Secure Self-Custody via Ledger Wallet">How to Buy Crypto with Secure Self-Custody via Ledger Wallet</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>            </div>
+                      <div class="swiper-slide">
+                                                                            
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/ledger-wallet/staking-with-ledger" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="330753" data-trigger-academy-article-topic="Ledger Wallet" data-trigger-academy-article-name="How to Stake Crypto with Ledger Wallet: Providers, Supported Assets &amp; Security Explained"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/ledger-wallet/staking-with-ledger" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="330753" data-trigger-academy-article-topic="Ledger Wallet" data-trigger-academy-article-name="How to Stake Crypto with Ledger Wallet: Providers, Supported Assets &amp; Security Explained">How to Stake Crypto with Ledger Wallet: Providers, Supported Assets &amp; Security Explained</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>            </div>
+                      <div class="swiper-slide">
+                                                                            
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/ledger-wallet/ledger-wallet-defi-web3" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="330756" data-trigger-academy-article-topic="Ledger Wallet" data-trigger-academy-article-name="How to Use Ledger Wallet™  with DeFi &amp; Crypto Apps"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/ledger-wallet/ledger-wallet-defi-web3" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="330756" data-trigger-academy-article-topic="Ledger Wallet" data-trigger-academy-article-name="How to Use Ledger Wallet™  with DeFi &amp; Crypto Apps">How to Use Ledger Wallet™ with DeFi &amp; Crypto Apps</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>            </div>
+                  </div>
+        <div class="bg bg-black block-content">
+          <div>
+                          <h2 class="title margin-sm">Trending topics</h2>
+                                      <p class="margin-xs">Find the most popular crypto guides here! These trending topics will help you learn about crypto as you explore, starting with the most common questions first. So what are you waiting for? It's time to embrace the world of crypto education.</p>
+                                      <a href="/academy/library" title="Trending topics" class="read-more is-primary">Explore more</a>
+                      </div>
+        </div>
+
+        <div class="swiper-button-next"><i class="icon-chevron-right"></i></div>
+        <div class="swiper-button-prev"><i class="icon-chevron-left"></i></div>
+      </div>
+    </div>
+  
+      <div class="margin-md">
+    <div class="bg-black campaign-banner">
+    <div class="row flexbox right campaign-banner-content no-margin-mobile ">
+                <div class="illustration" style="background-image:url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/712x615.png)"></div> 
+                 <div class="row bg content">
+                            <p class="emphasis">Upgrade your digital life</p>
+                                        <p class="heading-3 margin-s">Ledger Wallet: Free from compromise</p>
+                                                                <a href="https://shop.ledger.com/pages/ledger-wallet#download-ledger-wallet" title="Download now" class="button secondary" data-campaigns-button>Download now</a>
+                                        <a href="https://www.ledger.com/blog-release-notes-q2-2026-free-from-compromise" title="Learn more" class="read-more campaign-cta-2" data-campaigns-button>Learn more</a>
+                    </div>
+    </div>
+</div>
+
+    <script>
+        
+    </script>
+    </div>
+  
+    <div class="margin-md">
+    <div class="row flexbox align-items-center">
+              <p class="h6 color-grey-500 flex-none margin-xxs">Topics </p>
+                    <p class="h7 row align-center margin-xxs">The most popular topics to learn about in our crypto guide library....Check them out!</p>
+          </div>
+  </div>
+
+              <div class="margin-md topics-list">
+        <div class="row">
+                      <p class="h2 margin-s"><a href="https://www.ledger.com/academy/library/topic/blockchain" title="">Blockchain</a></p>
+                              <div class="margin-xs swiper swiper-topics-list" id="swiper-topics-Blockchain">
+            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/blockchain/robinhood-chain-and-ledger" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="331230" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="Robinhood Chain &amp; Ledger: How to Send, Receive &amp; Secure Your Assets"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/blockchain/robinhood-chain-and-ledger" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="331230" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="Robinhood Chain &amp; Ledger: How to Send, Receive &amp; Secure Your Assets">Robinhood Chain &amp; Ledger: How to Send, Receive &amp; Secure Your Assets</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/blockchain/ethereum-founder" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2022/09/02_Blockchain_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="329080" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="Who Founded Ethereum? The Story of Vitalik Buterin And The Co-Founders"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/blockchain/ethereum-founder" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="329080" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="Who Founded Ethereum? The Story of Vitalik Buterin And The Co-Founders">Who Founded Ethereum? The Story of Vitalik Buterin And The Co-Founders</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/blockchain/what-is-aleo-blockchain" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2022/09/02_Blockchain_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328568" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="What Is Aleo Blockchain?"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/blockchain/what-is-aleo-blockchain" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328568" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="What Is Aleo Blockchain?">What Is Aleo Blockchain?</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/blockchain/cardano-vs-solana" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/05/02_Blockchain_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="323309" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="Solana vs Cardano: Which Blockchain is Better in 2026?"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/blockchain/cardano-vs-solana" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="323309" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="Solana vs Cardano: Which Blockchain is Better in 2026?">Solana vs Cardano: Which Blockchain is Better in 2026?</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>-3 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/blockchain/sui-vs-solana" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/05/02_Blockchain_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="321599" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="Sui vs Solana: A Comprehensive Blockchain Comparison and Analysis"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/blockchain/sui-vs-solana" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="321599" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="Sui vs Solana: A Comprehensive Blockchain Comparison and Analysis">Sui vs Solana: A Comprehensive Blockchain Comparison and Analysis</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/blockchain/5-years-of-solana" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2022/09/02_Blockchain_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="321209" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="5 Years of Solana: From Scalable Blockchain to Global Settlement Layer"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/blockchain/5-years-of-solana" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="321209" data-trigger-academy-article-topic="Blockchain" data-trigger-academy-article-name="5 Years of Solana: From Scalable Blockchain to Global Settlement Layer">5 Years of Solana: From Scalable Blockchain to Global Settlement Layer</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                          </div>
+            <div class="swiper-button-next"><i class="icon-chevron-right"></i></div>
+            <div class="swiper-button-prev"><i class="icon-chevron-left"></i></div>
+            <div class="swiper-pagination"></div>
+          </div>
+                    <br>
+          <p class="left-on-mobile">
+            <a href="https://www.ledger.com/academy/library/topic/blockchain" title="" class="read-more">More on Blockchain</a>
+          </p>
+
+        </div>
+      </div>
+          <div class="margin-md topics-list">
+        <div class="row">
+                      <p class="h2 margin-s"><a href="https://www.ledger.com/academy/library/topic/country-guides" title="">Country Guides</a></p>
+                              <div class="margin-xs swiper swiper-topics-list" id="swiper-topics-Country Guides">
+            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-japan" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328485" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in Japan: The Ultimate Guide"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-japan" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328485" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in Japan: The Ultimate Guide">Crypto in Japan: The Ultimate Guide</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-france" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328191" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in France: The Ultimate Guide"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-france" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328191" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in France: The Ultimate Guide">Crypto in France: The Ultimate Guide</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-the-uae" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328062" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in the UAE: The Ultimate Guide"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-the-uae" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328062" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in the UAE: The Ultimate Guide">Crypto in the UAE: The Ultimate Guide</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-canada" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="327760" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in Canada: Country Guide"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-canada" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="327760" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in Canada: Country Guide">Crypto in Canada: Country Guide</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-singapore" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="324702" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in Singapore: The Ultimate Guide"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/country-guides/crypto-in-singapore" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="324702" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Crypto in Singapore: The Ultimate Guide">Crypto in Singapore: The Ultimate Guide</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/country-guides/best-crypto-wallet-in-turkey" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="319447" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Best Crypto Wallet in Turkey for 2025"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/country-guides/best-crypto-wallet-in-turkey" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="319447" data-trigger-academy-article-topic="Country Guides" data-trigger-academy-article-name="Best Crypto Wallet in Turkey for 2025">Best Crypto Wallet in Turkey for 2025</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                          </div>
+            <div class="swiper-button-next"><i class="icon-chevron-right"></i></div>
+            <div class="swiper-button-prev"><i class="icon-chevron-left"></i></div>
+            <div class="swiper-pagination"></div>
+          </div>
+                    <br>
+          <p class="left-on-mobile">
+            <a href="https://www.ledger.com/academy/library/topic/country-guides" title="" class="read-more">More on Country Guides</a>
+          </p>
+
+        </div>
+      </div>
+          <div class="margin-md topics-list">
+        <div class="row">
+                      <p class="h2 margin-s"><a href="https://www.ledger.com/academy/library/topic/crypto" title="">Crypto</a></p>
+                              <div class="margin-xs swiper swiper-topics-list" id="swiper-topics-Crypto">
+            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/crypto/which-ledger-signer-should-i-buy" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="331324" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Which Ledger Signer Is Right for You?"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/crypto/which-ledger-signer-should-i-buy" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="331324" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Which Ledger Signer Is Right for You?">Which Ledger Signer Is Right for You?</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/crypto/ledger-vs-phantom" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="331209" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Ledger Vs Phantom: Which Wallet To Secure Your Crypto?"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/crypto/ledger-vs-phantom" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="331209" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Ledger Vs Phantom: Which Wallet To Secure Your Crypto?">Ledger Vs Phantom: Which Wallet To Secure Your Crypto?</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                              
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/crypto/best-crypto-wallet-apps" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="330759" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Best Crypto Wallet Apps: Independent Security &amp; Feature Comparison"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/crypto/best-crypto-wallet-apps" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="330759" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Best Crypto Wallet Apps: Independent Security &amp; Feature Comparison">Best Crypto Wallet Apps: Independent Security &amp; Feature Comparison</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/crypto/ethereum-gas-fees-explained" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328645" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Ethereum Gas Fees Explained: What They Are and How They Work"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/crypto/ethereum-gas-fees-explained" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="328645" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Ethereum Gas Fees Explained: What They Are and How They Work">Ethereum Gas Fees Explained: What They Are and How They Work</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/crypto/bitcoin-vs-xrp" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="327960" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Bitcoin vs XRP: Key Differences Between the Blockchain Networks"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/crypto/bitcoin-vs-xrp" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="327960" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="Bitcoin vs XRP: Key Differences Between the Blockchain Networks">Bitcoin vs XRP: Key Differences Between the Blockchain Networks</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/crypto/best-crypto-wallets-2026" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/06_Crypto_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="327727" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="The Best Crypto Wallets of 2026"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/crypto/best-crypto-wallets-2026" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="327727" data-trigger-academy-article-topic="Crypto" data-trigger-academy-article-name="The Best Crypto Wallets of 2026">The Best Crypto Wallets of 2026</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                          </div>
+            <div class="swiper-button-next"><i class="icon-chevron-right"></i></div>
+            <div class="swiper-button-prev"><i class="icon-chevron-left"></i></div>
+            <div class="swiper-pagination"></div>
+          </div>
+                    <br>
+          <p class="left-on-mobile">
+            <a href="https://www.ledger.com/academy/library/topic/crypto" title="" class="read-more">More on Crypto</a>
+          </p>
+
+        </div>
+      </div>
+          <div class="margin-md topics-list">
+        <div class="row">
+                      <p class="h2 margin-s"><a href="https://www.ledger.com/academy/library/topic/defi" title="">DeFi</a></p>
+                              <div class="margin-xs swiper swiper-topics-list" id="swiper-topics-DeFi">
+            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/defi/best-defi-wallets" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/05_DeFi_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="327700" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="Best DeFi Wallets in 2026: The Complete Guide"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/defi/best-defi-wallets" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="327700" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="Best DeFi Wallets in 2026: The Complete Guide">Best DeFi Wallets in 2026: The Complete Guide</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/defi/what-is-bitcoin-yield" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/05_DeFi_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="323362" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="What Is Bitcoin Yield?"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/defi/what-is-bitcoin-yield" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="323362" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="What Is Bitcoin Yield?">What Is Bitcoin Yield?</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/defi/okx-decentralized-exchange-dex-explained" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/05_DeFi_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="322354" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="OKX Decentralized Exchange (DEX) Explained"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/defi/okx-decentralized-exchange-dex-explained" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="322354" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="OKX Decentralized Exchange (DEX) Explained">OKX Decentralized Exchange (DEX) Explained</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/defi/what-are-tokenized-equities" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/05/02_Blockchain_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="321902" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="What Are Tokenized Equities? A Comprehensive Guide"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/defi/what-are-tokenized-equities" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="321902" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="What Are Tokenized Equities? A Comprehensive Guide">What Are Tokenized Equities? A Comprehensive Guide</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/defi/defai-explained-how-ai-agents-are-transforming-decentralized-finance" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/05_DeFi_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="308550" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="DeFAI Explained: How AI Agents Are Transforming Decentralized Finance"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/defi/defai-explained-how-ai-agents-are-transforming-decentralized-finance" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="308550" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="DeFAI Explained: How AI Agents Are Transforming Decentralized Finance">DeFAI Explained: How AI Agents Are Transforming Decentralized Finance</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                              
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/defi/what-is-the-difference-between-raydium-and-raydium-cpmm" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/05_DeFi_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="303039" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="What Is the Difference Between Raydium and Raydium CPMM?"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/defi/what-is-the-difference-between-raydium-and-raydium-cpmm" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="303039" data-trigger-academy-article-topic="DeFi" data-trigger-academy-article-name="What Is the Difference Between Raydium and Raydium CPMM?">What Is the Difference Between Raydium and Raydium CPMM?</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+              <span>8 min</span>
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                          </div>
+            <div class="swiper-button-next"><i class="icon-chevron-right"></i></div>
+            <div class="swiper-button-prev"><i class="icon-chevron-left"></i></div>
+            <div class="swiper-pagination"></div>
+          </div>
+                    <br>
+          <p class="left-on-mobile">
+            <a href="https://www.ledger.com/academy/library/topic/defi" title="" class="read-more">More on DeFi</a>
+          </p>
+
+        </div>
+      </div>
+          <div class="margin-md topics-list">
+        <div class="row">
+                      <p class="h2 margin-s"><a href="https://www.ledger.com/academy/library/topic/ledgersolutions" title="">Ledger solutions</a></p>
+                              <div class="margin-xs swiper swiper-topics-list" id="swiper-topics-Ledger solutions">
+            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/ledgersolutions/ledger-vs-metamask" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="329078" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Ledger vs MetaMask: The Ultimate Comparison"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/ledgersolutions/ledger-vs-metamask" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="329078" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Ledger vs MetaMask: The Ultimate Comparison">Ledger vs MetaMask: The Ultimate Comparison</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/ledgersolutions/ledger-vs-trezor-2026-which-hardware-wallet-is-safer-ultimate-comparison" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="326430" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Ledger vs Trezor 2026: Which Hardware Wallet Is Safer? (Ultimate Comparison)"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/ledgersolutions/ledger-vs-trezor-2026-which-hardware-wallet-is-safer-ultimate-comparison" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="326430" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Ledger vs Trezor 2026: Which Hardware Wallet Is Safer? (Ultimate Comparison)">Ledger vs Trezor 2026: Which Hardware Wallet Is Safer? (Ultimate Comparison)</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/ledgersolutions/how-to-generate-yield-stake-and-spend-crypto-via-ledger-wallet-4-0" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="325358" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="How to Generate Yield, Stake, and Spend Crypto via Ledger Wallet 4.0*"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/ledgersolutions/how-to-generate-yield-stake-and-spend-crypto-via-ledger-wallet-4-0" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="325358" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="How to Generate Yield, Stake, and Spend Crypto via Ledger Wallet 4.0*">How to Generate Yield, Stake, and Spend Crypto via Ledger Wallet 4.0*</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/ledgersolutions/what-you-sign-matters-clear-signing-in-ledger-wallet-4-0" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="325357" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="What You Sign Matters: Clear Signing in Ledger Wallet 4.0"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/ledgersolutions/what-you-sign-matters-clear-signing-in-ledger-wallet-4-0" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="325357" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="What You Sign Matters: Clear Signing in Ledger Wallet 4.0">What You Sign Matters: Clear Signing in Ledger Wallet 4.0</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/ledgersolutions/ledger-nano-gen5-colors-a-signer-that-reflects-your-personality-intent" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="325669" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Ledger Nano Gen5 Colors: A signer That Reflects Your Personality &amp; Intent"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/ledgersolutions/ledger-nano-gen5-colors-a-signer-that-reflects-your-personality-intent" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="325669" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Ledger Nano Gen5 Colors: A signer That Reflects Your Personality &amp; Intent">Ledger Nano Gen5 Colors: A signer That Reflects Your Personality &amp; Intent</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/ledgersolutions/ledger-wallet-4-0-your-gateway-to-more-choice-in-multichain-defi" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/10_Ledger-Ecosystem_Thumb_No-title-1.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="325353" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Ledger Wallet 4.0: Your Gateway to More Choice in Multichain DeFi"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/ledgersolutions/ledger-wallet-4-0-your-gateway-to-more-choice-in-multichain-defi" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="325353" data-trigger-academy-article-topic="Ledger solutions" data-trigger-academy-article-name="Ledger Wallet 4.0: Your Gateway to More Choice in Multichain DeFi">Ledger Wallet 4.0: Your Gateway to More Choice in Multichain DeFi</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                          </div>
+            <div class="swiper-button-next"><i class="icon-chevron-right"></i></div>
+            <div class="swiper-button-prev"><i class="icon-chevron-left"></i></div>
+            <div class="swiper-pagination"></div>
+          </div>
+                    <br>
+          <p class="left-on-mobile">
+            <a href="https://www.ledger.com/academy/library/topic/ledgersolutions" title="" class="read-more">More on Ledger solutions</a>
+          </p>
+
+        </div>
+      </div>
+          <div class="margin-md topics-list">
+        <div class="row">
+                      <p class="h2 margin-s"><a href="https://www.ledger.com/academy/library/topic/security" title="">Security</a></p>
+                              <div class="margin-xs swiper swiper-topics-list" id="swiper-topics-Security">
+            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                                                              
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/security/crypto-security-2026-how-to-avoid-scams-and-hacks-in-2026" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/02/09_Security_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="329511" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="Crypto Security 2026: How To Avoid Scams and Hacks in 2026"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/security/crypto-security-2026-how-to-avoid-scams-and-hacks-in-2026" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="329511" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="Crypto Security 2026: How To Avoid Scams and Hacks in 2026">Crypto Security 2026: How To Avoid Scams and Hacks in 2026</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                              
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/security/custodial-vs-non-custodial-wallets" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/02/09_Security_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="324704" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="What Are Custodial and Non-Custodial Wallets?"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/security/custodial-vs-non-custodial-wallets" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="324704" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="What Are Custodial and Non-Custodial Wallets?">What Are Custodial and Non-Custodial Wallets?</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/security/addressing-self-custodys-greatest-misconceptions" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/02/09_Security_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="320097" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="Addressing Self-Custody’s Greatest Misconceptions"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/security/addressing-self-custodys-greatest-misconceptions" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="320097" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="Addressing Self-Custody’s Greatest Misconceptions">Addressing Self-Custody’s Greatest Misconceptions</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/security/crypto-wallet-security-checklist-protect-crypto-with-ledger" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/02/09_Security_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="317595" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="Crypto Wallet Security Checklist 2026: Protect Crypto with Ledger"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/security/crypto-wallet-security-checklist-protect-crypto-with-ledger" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="317595" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="Crypto Wallet Security Checklist 2026: Protect Crypto with Ledger">Crypto Wallet Security Checklist 2026: Protect Crypto with Ledger</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                              
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/security/understanding-the-multisig-xpub-a-guide-for-secure-wallet-management" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/02/09_Security_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="316876" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="Understanding the Multisig Xpub: A Guide for Secure Wallet Management"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/security/understanding-the-multisig-xpub-a-guide-for-secure-wallet-management" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="316876" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="Understanding the Multisig Xpub: A Guide for Secure Wallet Management">Understanding the Multisig Xpub: A Guide for Secure Wallet Management</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                            <div class="swiper-slide">
+                                                                        
+<div class="article-card">
+  <!-- all-clickable -->
+  <a href="https://www.ledger.com/academy/topics/security/the-state-of-crypto-scams" class="illustration" style="background-image: url(https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/02/09_Security_Thumb_No-title.webp);" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="312443" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="The State of Crypto Scams in 2026"></a>
+  <div class="content">
+    <a href="https://www.ledger.com/academy/topics/security/the-state-of-crypto-scams" class="h7 title margin-xs" data-trigger-academy-article data-trigger-academy-article-category="Read" data-trigger-academy-article-id="312443" data-trigger-academy-article-topic="Security" data-trigger-academy-article-name="The State of Crypto Scams in 2026">The State of Crypto Scams in 2026</a>
+
+                <div class="caption-for-article">
+            <div class="time-to-read">
+                <span class="badge badge-nude">
+          <i class="icon-copy"></i> Read
+        </span>
+      </div>
+      
+      
+              <span class="with-point level level-1">Beginner</span>
+          </div>
+      </div>
+</div>              </div>
+                          </div>
+            <div class="swiper-button-next"><i class="icon-chevron-right"></i></div>
+            <div class="swiper-button-prev"><i class="icon-chevron-left"></i></div>
+            <div class="swiper-pagination"></div>
+          </div>
+                    <br>
+          <p class="left-on-mobile">
+            <a href="https://www.ledger.com/academy/library/topic/security" title="" class="read-more">More on Security</a>
+          </p>
+
+        </div>
+      </div>
+      
+        <div class="section-explore-topics">
+      <div class="row">
+        <p class="margin-xs flex-none color-grey-500">Explore Topics</p>
+
+        <nav class="row no-margin-mobile">
+          <ul>
+                        <li><a href="https://www.ledger.com/academy/library/topic/agentic-ai" title="" class="read-more"><i class="icon-project-diagram"></i> Agentic AI</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/blockchain" title="" class="read-more"><i class="icon-project-diagram"></i> Blockchain</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/country-guides" title="" class="read-more"><i class="icon-star"></i> Country Guides</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/crypto" title="" class="read-more"><i class="icon-coins"></i> Crypto</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/defi" title="" class="read-more"><i class="icon-transfer"></i> DeFi</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/digital-identity" title="" class="read-more"><i class="icon-project-diagram"></i> Digital Identity</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/economics-and-regulation" title="" class="read-more"><i class="none"></i> Economics and Regulation</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/ledgersolutions" title="" class="read-more"><i class="icon-nano-x-alt"></i> Ledger solutions</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/ledger-wallet" title="" class="read-more"><i class="none"></i> Ledger Wallet</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/scams" title="" class="read-more"><i class="icon-lock-alt"></i> Scams</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/security" title="" class="read-more"><i class="icon-lock-alt"></i> Security</a></li>
+                        <li><a href="https://www.ledger.com/academy/library/topic/trading-prediction-markets" title="" class="read-more"><i class="none"></i> Trading &amp; Prediction Markets</a></li>
+                      </ul>
+        </nav>
+      </div>
+    </div>
+  
+  <div class="bg bg-black section-swiper-our-series">
+  <div>
+    <h3 class="row h4 margin-sm">Check out our series</h3>
+          <div class="row swiper swiper-our-series" id="swiper-our-series">
+        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                  <a href="https://www.ledger.com/academy/series/enter-the-donjon" title="Enter The Donjon">
+                    <img src="https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/Copy-of-DONJON_YOUTUBE_EP1SERIES-min-scaled-e1675159617288-490x266.jpg" alt="" width="100%" class="margin-xs">
+                  </a>
+                                <div class="content">
+                  <div>
+                    <div class="flex-row align-items-start space-between margin-xxs">
+                      <h4 class="h6">
+                        <a href="https://www.ledger.com/academy/series/enter-the-donjon" title="Enter The Donjon" data-trigger-academy-article>Enter The Donjon</a>
+                      </h4>
+                                          </div>
+                                          <p class="color-grey-500 margin-xs">The Donjon: A lab that investigates the security of everybody's crypto, including yours. But, since we want you to understand what it takes to truly secure your digital assets, we have decided to let you in - for a couple minutes.</p>
+                                      </div>
+
+                  <a href="https://www.ledger.com/academy/series/enter-the-donjon" title="" class="read-more" data-trigger-academy-article>Start Watching</a>
+                </div>
+              </div>
+                                                                        <div class="swiper-slide">
+                                  <a href="https://www.ledger.com/academy/series/rookie-to-pro" title="From Rookie to Pro">
+                    <img src="https://ledger-wp-website-s3-prd.ledger.com/uploads/2026/03/Rookie_to_Pro_Series.png" alt="" width="100%" class="margin-xs">
+                  </a>
+                                <div class="content">
+                  <div>
+                    <div class="flex-row align-items-start space-between margin-xxs">
+                      <h4 class="h6">
+                        <a href="https://www.ledger.com/academy/series/rookie-to-pro" title="From Rookie to Pro" data-trigger-academy-article>From Rookie to Pro</a>
+                      </h4>
+                                          </div>
+                                          <p class="color-grey-500 margin-xs">Learn all the basics of how to win with crypto. Discover how to secure your financial freedom with genuine ownership and stress-free control.</p>
+                                      </div>
+
+                  <a href="https://www.ledger.com/academy/series/rookie-to-pro" title="" class="read-more" data-trigger-academy-article>See more</a>
+                </div>
+              </div>
+                                                                        <div class="swiper-slide">
+                                  <a href="https://www.ledger.com/academy/series/how-i-got-hacked" title="How I Got Hacked">
+                    <img src="https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/01/Thumbnail_Serie-490x275.jpeg" alt="" width="100%" class="margin-xs">
+                  </a>
+                                <div class="content">
+                  <div>
+                    <div class="flex-row align-items-start space-between margin-xxs">
+                      <h4 class="h6">
+                        <a href="https://www.ledger.com/academy/series/how-i-got-hacked" title="How I Got Hacked" data-trigger-academy-article>How I Got Hacked</a>
+                      </h4>
+                                          </div>
+                                          <p class="color-grey-500 margin-xs">These are the kinds of stories that Ledger would prefer to never hear - stories of ETH, BTC, NFTs or other digital assets disappearing, without their owner understanding why. </p>
+                                      </div>
+
+                  <a href="https://www.ledger.com/academy/series/how-i-got-hacked" title="" class="read-more" data-trigger-academy-article>Start watching</a>
+                </div>
+              </div>
+                                                                        <div class="swiper-slide">
+                                  <a href="https://www.ledger.com/academy/series/get-your-crypto-safe" title="Keep Your Crypto Safe">
+                    <img src="https://ledger-wp-website-s3-prd.ledger.com/uploads/2022/06/get_your_crypto_safe_thumbnail-490x275.png" alt="" width="100%" class="margin-xs">
+                  </a>
+                                <div class="content">
+                  <div>
+                    <div class="flex-row align-items-start space-between margin-xxs">
+                      <h4 class="h6">
+                        <a href="https://www.ledger.com/academy/series/get-your-crypto-safe" title="Keep Your Crypto Safe" data-trigger-academy-article>Keep Your Crypto Safe</a>
+                      </h4>
+                                          </div>
+                                          <p class="color-grey-500 margin-xs">Crypto requires new rules. New protections. New security practices. But nothing that can’t be learned. Nor taught. Play those tutorial videos, meet with Ian Rogers, Experience Officer at Ledger, then be on the safe side with crypto.</p>
+                                      </div>
+
+                  <a href="https://www.ledger.com/academy/series/get-your-crypto-safe" title="" class="read-more" data-trigger-academy-article>Start Watching</a>
+                </div>
+              </div>
+                                                                                                                                                                                                                                                                <div class="swiper-slide">
+                                  <a href="https://www.ledger.com/academy/series/on-the-ledger" title="The Ledger Podcast">
+                    <img src="https://ledger-wp-website-s3-prd.ledger.com/uploads/2024/10/Logo_-L-Studio-Podcast_White-275x275.png" alt="" width="100%" class="margin-xs">
+                  </a>
+                                <div class="content">
+                  <div>
+                    <div class="flex-row align-items-start space-between margin-xxs">
+                      <h4 class="h6">
+                        <a href="https://www.ledger.com/academy/series/on-the-ledger" title="The Ledger Podcast" data-trigger-academy-article>The Ledger Podcast</a>
+                      </h4>
+                                          </div>
+                                          <p class="color-grey-500 margin-xs">On 'The Ledger Podcast', we have conversations with some of the most interesting brains in crypto, cybersecurity and culture to discuss the journey so far and what the future might hold. Follow and subscribe for insights and discussions you won't find anywhere else.</p>
+                                      </div>
+
+                  <a href="https://www.ledger.com/academy/series/on-the-ledger" title="" class="read-more" data-trigger-academy-article>Start Listening</a>
+                </div>
+              </div>
+                              </div>
+        <div class="swiper-button-next"><i class="icon-chevron-right"></i></div>
+        <div class="swiper-button-prev"><i class="icon-chevron-left"></i></div>
+      </div>
+    
+  </div>
+</div>
+      <div class="bg bg-carbon section-shop-banner">
+    <div class="row no-margin-mobile">
+      <div class="row content">
+                  <h3 class="margin-s">Ledger Wallet: <br />
+Free from compromise</h3>
+                          <a href="https://shop.ledger.com/pages/ledger-wallet" title="" class="read-more is-primary">Upgrade your digital life</a>
+              </div>
+      <div class="illustration">
+                <img src="https://ledger-wp-website-s3-prd.ledger.com/uploads/2023/04/712x615.png" alt="" class="clearfix">
+              </div>
+    </div>
+  </div>
+    </main>
+
+      <footer class="ldg-container" id="footer">
+  <div class="row flexbox">
+    <div>
+      <a href="https://www.ledger.com" title="Ledger" class="logo"><img src="https://www.ledger.com/wp-content/themes/ledger-v2/public/images/ledger-logo-long.svg" alt=""></a>
+
+      <ul class="language-container">
+          
+    <!-- List Version -->
+    <li class="has-children language-switcher language-list">
+        <a href="#" class="activeLanguage" data-isocode="en" onclick="return false;">
+            <span class="activeLanguage__header">en</span>
+            <span class="activeLanguage__generic">English</span>
+        </a>
+        <ul class="submenu">
+                                                                                                            <li>
+                            <a href="https://www.ledger.com/fr/academy" title="" data-name="French" data-isocode="fr" class="localeItem">
+                                Français
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/tr/academy" title="" data-name="Turkish" data-isocode="tr" class="localeItem">
+                                Türkçe
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/de/academy" title="" data-name="German" data-isocode="de" class="localeItem">
+                                Deutsch
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/pt-br/academy" title="" data-name="Portuguese (Brazil)" data-isocode="pt-br" class="localeItem">
+                                Português
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/es/academy" title="" data-name="Spanish" data-isocode="es" class="localeItem">
+                                Español
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ru/academy" title="" data-name="Russian" data-isocode="ru" class="localeItem">
+                                Русский
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/zh-hans/academy" title="" data-name="Chinese (Simplified)" data-isocode="zh-hans" class="localeItem">
+                                简体中文
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ja/academy" title="" data-name="Japanese" data-isocode="ja" class="localeItem">
+                                日本語
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ko/academy" title="" data-name="Korean" data-isocode="ko" class="localeItem">
+                                한국어
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/ar/academy" title="" data-name="Arabic" data-isocode="ar" class="localeItem">
+                                العربية
+                            </a>
+                        </li>
+                                                                                <li>
+                            <a href="https://www.ledger.com/th/academy" title="" data-name="Thai" data-isocode="th" class="localeItem">
+                                ภาษาไทย
+                            </a>
+                        </li>
+                                                        </ul>
+    </li>
+
+    <!-- Select Dropdown Version -->
+    <div class="language-select language-switcher">
+        <select class="activeLanguage language-dropdown" onchange="window.location.href=this.value" data-isocode="en">
+            <option class="activeLanguage__header" value="#" disabled selected>English</option>
+            
+                                                                                                            <option value="https://www.ledger.com/fr/academy" data-name="French" data-isocode="fr">
+                            Français
+                        </option>
+                                                                                <option value="https://www.ledger.com/tr/academy" data-name="Turkish" data-isocode="tr">
+                            Türkçe
+                        </option>
+                                                                                <option value="https://www.ledger.com/de/academy" data-name="German" data-isocode="de">
+                            Deutsch
+                        </option>
+                                                                                <option value="https://www.ledger.com/pt-br/academy" data-name="Portuguese (Brazil)" data-isocode="pt-br">
+                            Português
+                        </option>
+                                                                                <option value="https://www.ledger.com/es/academy" data-name="Spanish" data-isocode="es">
+                            Español
+                        </option>
+                                                                                <option value="https://www.ledger.com/ru/academy" data-name="Russian" data-isocode="ru">
+                            Русский
+                        </option>
+                                                                                <option value="https://www.ledger.com/zh-hans/academy" data-name="Chinese (Simplified)" data-isocode="zh-hans">
+                            简体中文
+                        </option>
+                                                                                <option value="https://www.ledger.com/ja/academy" data-name="Japanese" data-isocode="ja">
+                            日本語
+                        </option>
+                                                                                <option value="https://www.ledger.com/ko/academy" data-name="Korean" data-isocode="ko">
+                            한국어
+                        </option>
+                                                                                <option value="https://www.ledger.com/ar/academy" data-name="Arabic" data-isocode="ar">
+                            العربية
+                        </option>
+                                                                                <option value="https://www.ledger.com/th/academy" data-name="Thai" data-isocode="th">
+                            ภาษาไทย
+                        </option>
+                                                        </select>
+    </div>
+</li>
+      </ul>
+      <div class="credit-container">
+        <p class="text-caption margin-xs">
+          Copyright © Ledger SAS. All rights reserved. Ledger, Ledger Stax, Ledger Flex, Ledger Nano, Ledger Nano S, Ledger OS, Ledger Wallet, [LEDGER] (logo), and [L] (logo) are trademarks owned by Ledger SAS.<br />
+<br />
+106 rue du Temple, 75003 Paris, France
+        </p>
+        <p class="text-caption margin-xxs">
+          Payment methods
+        </p>
+          <img src="https://www.ledger.com/wp-content/themes/ledger-v2/public/images/payment-methods-logos.webp" alt="">
+        <div class="spurs-partnership">
+          <img src="https://ledger-wp-website-s3-prd.ledger.com/uploads/2026/06/spurs-ledger-logo.webp" alt="Spurs Ledger" width="200" height="48">
+          <p class="text-caption">
+            Official Jersey Patch Partner of the San Antonio Spurs
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <nav class="flexbox footer-navigation">
+              <div>
+                                    <ul>
+    <li>
+        Products
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317100">
+                    <a href="https://shop.ledger.com/pages/secure-touchscreen-signers">Secure touchscreen signers</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317096">
+                    <a href="https://shop.ledger.com/pages/hardware-wallet">Hardware Wallet</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317099">
+                    <a href="https://shop.ledger.com/products/ledger-nano-gen5">Ledger Nano Gen5</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317097">
+                    <a href="https://shop.ledger.com/pages/ledger-stax">Ledger Stax</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317098">
+                    <a href="https://shop.ledger.com/pages/ledger-flex">Ledger Flex</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317120">
+                    <a href="https://shop.ledger.com/pages/classic-ledger-nano-signers">Ledger Nano Classics</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317121">
+                    <a href="https://shop.ledger.com/pages/hardware-wallets-comparison">Compare our devices</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317122">
+                    <a href="https://shop.ledger.com/#category-bundle">Bundles</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317123">
+                    <a href="https://shop.ledger.com/#category-accessories">Accessories</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317124">
+                    <a href="https://shop.ledger.com/">All products</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-317125">
+                    <a href="https://shop.ledger.com/pages/ledger-wallet">Ledger Wallet App</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                                <ul>
+    <li>
+        Crypto Assets
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-9935">
+                    <a href="https://www.ledger.com/coin/wallet/bitcoin">Bitcoin wallet</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-4498">
+                    <a href="https://www.ledger.com/coin/wallet/ethereum">Ethereum wallet</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-296381">
+                    <a href="https://www.ledger.com/coin/wallet/solana">Solana wallet</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-268807">
+                    <a href="https://www.ledger.com/coin/wallet/cardano">Cardano wallet</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-4497">
+                    <a href="https://www.ledger.com/coin/wallet/ripple">XRP wallet</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-268808">
+                    <a href="https://www.ledger.com/coin/wallet/monero">Monero wallet</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-268809">
+                    <a href="https://www.ledger.com/coin/wallet/tether">USDT wallet</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-4496">
+                    <a href="https://www.ledger.com/supported-crypto-assets">See all assets</a>
+                </li>
+                            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-308522">
+                    <a href="https://www.ledger.com/what-is-a-crypto-wallet">Crypto Wallet</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                                <ul>
+    <li>
+        Crypto Services
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-268810">
+                    <a href="https://www.ledger.com/coin/price">Crypto Prices</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-325089">
+                    <a href="https://shop.ledger.com/pages/buy">Buy crypto</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-325090">
+                    <a href="https://shop.ledger.com/pages/staking">Crypto staking</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-325091">
+                    <a href="https://shop.ledger.com/pages/swap">Swap crypto</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                              </div>
+              <div>
+                                    <ul>
+    <li>
+        For Business
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-4490">
+                    <a href="https://enterprise.ledger.com/">Ledger Enterprise Solutions</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                                <ul>
+    <li>
+        For Startups
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-260597">
+                    <a href="https://www.ledger.com/cathay-ledger-fund">Funding from Ledger Cathay Capital</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                                <ul>
+    <li>
+        For Developers
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-79929">
+                    <a href="https://developers.ledger.com/">The Developer Portal</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                                <ul>
+    <li>
+        Get started
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-10242">
+                    <a href="https://www.ledger.com/start">Start using your Ledger device</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-11525">
+                    <a href="https://www.ledger.com/ledger-wallets-and-services">Compatible wallets and services</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-11520">
+                    <a href="https://www.ledger.com/buy-bitcoin">How to buy Bitcoin</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-290639">
+                    <a href="https://shop.ledger.com/pages/bitcoin-hardware-wallet">Bitcoin Hardware Wallet</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                                <ul>
+    <li>
+        See also
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-4505">
+                    <a href="https://support.ledger.com/">Support</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-4507">
+                    <a href="https://donjon.ledger.com/bounty/">Bounty program</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-9937">
+                    <a href="/reseller">Resellers</a>
+                </li>
+                            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-79931">
+                    <a href="https://www.ledger.com/press">Ledger Press Kit</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-9938">
+                    <a href="https://affiliate.ledger.com/">Affiliates</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-9939">
+                    <a href="https://status.ledger.com/">Status</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-293932">
+                    <a href="https://developers.ledger.com/">Developers</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-14258">
+                    <a href="/partners">Partners</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                              </div>
+              <div>
+                                    <ul>
+    <li>
+        Careers
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-293912">
+                    <a href="https://careers.ledger.com/">Join us</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-293913">
+                    <a href="https://jobs.ashbyhq.com/ledger">All jobs</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                                <ul>
+    <li>
+        About
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-12382">
+                    <a href="https://www.ledger.com/blog/we-are-ledger-a-brand-vision">Our vision</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-11491">
+                    <a href="https://www.ledger.com/academy">Ledger Academy</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-4501">
+                    <a href="https://careers.ledger.com/our-company">The company</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-10246">
+                    <a href="/blog">Blog</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                                                <ul>
+    <li>
+        Legal
+        <ul class="menu">
+                            <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-293092">
+                    <a href="https://www.ledger.com/legal-center">Legal Center</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-4509">
+                    <a href="https://shop.ledger.com/pages/terms-and-conditions">Sales Terms and Conditions</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-4511">
+                    <a href="https://www.ledger.com/privacy-policy">Privacy Policy</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-296726">
+                    <a href="https://shop.ledger.com/pages/cookie-policy">Cookie Policy</a>
+                </li>
+                            <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-289786">
+                    <a href="https://shop.ledger.com/pages/disclaimers">Disclaimers</a>
+                </li>
+                    </ul>
+    </li>
+</ul>
+                              </div>
+          </nav>
+  </div>
+
+  <input type="hidden" id="crypto_assets-env" value="prod" />
+</footer>    <script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ledger-v2/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+    <!-- Push Tag -->
+
+    <script>
+      window.dataLayer = window.dataLayer || []
+      dataLayer.push({
+        'event': 'page_view',
+        'site_language': 'en',
+        'user_country': 'en',
+        'page_title': 'Ledger Academy',
+        'page_type': 'homepage'
+      })
+    </script>
+    <!-- End Push Tag  -->
+	<script type="text/javascript">
+        function onRecaptchaEnterpriseApiLoaded() {
+            document.dispatchEvent(new Event('recaptchaApiReady'));
+        }
+    </script><script id="heateor_sss_sharing_js-js-before">
+function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = 'https://www.ledger.com/wp-admin/admin-ajax.php', heateorSssCloseIconPath = 'https://www.ledger.com/wp-content/plugins/sassy-social-share/public/../images/close.png', heateorSssPluginIconPath = 'https://www.ledger.com/wp-content/plugins/sassy-social-share/public/../images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")}
+//# sourceURL=heateor_sss_sharing_js-js-before
+</script>
+<script id="heateor_sss_sharing_js-js" src="https://www.ledger.com/wp-content/plugins/sassy-social-share/public/js/sassy-social-share-public.js?ver=3.3.79"></script>
+<script id="globals-js-extra">
+var phpVariables = {"userCountry":"US"};
+//# sourceURL=globals-js-extra
+</script>
+<script id="globals-js" src="https://www.ledger.com/wp-content/themes/ledger-v2/public/js/iosCookieDisable.js"></script>
+<script id="ledger-js-extra">
+var ParamsDataMain = {"url_affiliate":"https://affiliate.ledger.com"};
+//# sourceURL=ledger-js-extra
+</script>
+<script id="ledger-js" src="https://www.ledger.com/wp-content/themes/ledger-v2/public/js/main.js?ver=14594"></script>
+<script id="language-js" src="https://www.ledger.com/wp-content/themes/ledger-v2/public/js/language.js"></script>
+<script id="globalisation-bar-js" src="https://www.ledger.com/wp-content/themes/ledger-v2/public/js/globalisation-bar.js"></script>
+<script id="swiper-js-js" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.js"></script>
+<script id="fontawesome-js-js" src="https://kit.fontawesome.com/f8a71d88c0.js"></script>
+<script id="newsletter-form-js-js-extra">
+var ParamsDataNewsletterForm = {"wp_ajax_url":"https://www.ledger.com/wp-admin/admin-ajax.php","current_language_code":"en","siteKey":"6Ld5wAUrAAAAAPxTES7LrOw7W8VBA5s4W6e8PtfJ","recaptcha_loaded":"","recaptcha_url":"https://www.google.com/recaptcha/enterprise.js?onload=onRecaptchaEnterpriseApiLoaded&render=6Ld5wAUrAAAAAPxTES7LrOw7W8VBA5s4W6e8PtfJ&hl=en","loading_text":"Processing"};
+//# sourceURL=newsletter-form-js-js-extra
+</script>
+<script id="newsletter-form-js-js" src="https://www.ledger.com/wp-content/themes/ledger-v2/public/js/newsletter-form.js?ver=14594"></script>
+<script id="popin-js-js" src="https://www.ledger.com/wp-content/themes/ledger-v2/public/js/popin.js?ver=14594"></script>
+<script id="academy-js-extra">
+var ParamsDataSearch = {"wp_ajax_url":"https://www.ledger.com/wp-admin/admin-ajax.php","base_url":"","is_library":"false","current_terms":"","cpt":"academy","template":"academy"};
+//# sourceURL=academy-js-extra
+</script>
+<script id="academy-js" src="https://www.ledger.com/wp-content/themes/ledger-v2/public/js/academy.js?ver=14594"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.ledger.com/wp-includes/js/wp-emoji-release.min.js"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://www.ledger.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        
+      // Swiper for Curated Articles    
+      var swiper = new Swiper("#swiper-curated-articles", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      // Swiper Topics list
+      var swiper = new Swiper(".swiper-topics-list", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          // when window width is >= 690px
+          690: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+          992: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+          }
+        }
+      });
+
+      // Swiper Check our series
+      var swiper = new Swiper("#swiper-our-series", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          // when window width is >= 768px
+          768: {
+            slidesPerView: '2',
+          },
+          992: {
+            slidesPerView: 'auto',
+            spaceBetween: 40,
+          }
+        }
+      });
+
+    });
+  </script>
+
+      <div id="email-popin" class="block-popin" data-popin="40" data-popin-id="300161">
+    <div class="container">
+        <button class="close" data-popin-close><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="24-m-close">
+<path id="Vector" d="M5 5L19 19M19 5L5 19" stroke="black" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+
+        </button>
+        <div class="content">
+                            <img src="https://ledger-wp-website-s3-prd.ledger.com/uploads/2025/01/visualacademu.webp" alt="">
+                                        <p class="heading-5">Own your crypto future</p>
+                                        <div class="text-body-r"><p>Stay informed with security tips, updates, and exclusive offers from Ledger<span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></p>
+</div>
+                                    <form id="email-popin-form" class="" name="UntitledForm-1664173584588" action="#" method="POST" data-newsletter-form>
+                                                            <input type="hidden" name="elqFormName" value="UntitledForm-1664173584588">
+                                                                                <input type="hidden" name="8L9GGC" value="newsletter">
+                                                                                <div class="fields-container">
+                            <input class="popin-form-input text-body-highlight" type="email" id="email" name="M14KZX" required data-popin-email/>
+                            <label class="text-body-highlight" for="email">Email address</label>
+                        </div>
+                                                                                <input type="hidden" name="WBP125" value="academy">
+                                                    <button type="submit" class="button primary read-more">Register</button>
+            </form>
+                                        <div class="text-small-caption"><p>Your email address will only be used to send you our newsletter, as well as updates and offers. You can unsubscribe at any time. <a href="https://shop.ledger.com/pages/privacy-notice#ledger-newsletter">Learn more</a></p>
+</div>
+                <p class="text-small-caption">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                    <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+                    </div>
+    </div>
+</div>  </body>
+</html>
