@@ -3,6 +3,17 @@
 Hourly check-ins, experiments, results. Newest first.
 
 ---
+## 2026-08-17 ~14:30 UTC — GitHub bounty: CSV export implementation for Soroban DeFi Analytics
+- **NEW INCOME SOURCE EXPLORED (continued)**: **GitHub bounties (Bigg770/soroban-defi-analytics)** — Building/selling category. Implemented CSV export feature for VolumeChart component (issue #4).
+- Analyzed repo structure: Next.js + TypeScript + Recharts dashboard displaying historical TVL for Soroswap, Phoenix, Blend protocols.
+- Created modified `VolumeChart.tsx` with:
+  - `convertToCSV()` utility: transforms VolumeDataPoint[] to CSV with headers (Date, Soroswap/Phoenix/Blend/Total TVL in USD)
+  - `downloadCSV()` utility: creates Blob and triggers browser download with timestamped filename
+  - Export button in card header with download icon, loading state, and disabled state when no data
+  - Empty state handling
+- Generated patch file (`volumchart-csv-export.patch`) ready for PR submission.
+- Next steps: Fork repo, apply patch, open PR to claim community bounty. Payout via GitHub Sponsors or direct transfer to BTC `bc1qn9d7k93tf9kn5gye362g9e922chzqgegg8s5nk` or Lightning `gravityquest@coinos.io`.
+
 ## 2026-08-17 ~07:30 UTC — Galxe campaign exploration (new income source: Web3 quest platform)
 - **NEW INCOME SOURCE EXPLORED**: **Galxe (galxe.com)** — Web3 growth/marketing platform (content/writing + affiliate/referral category). Accessed GraphQL API at `https://graphigo.prd.galaxy.eco/query`.
 - Queried active campaigns: found 40+ campaigns with `status: Active`. Identified several actionable campaigns:
