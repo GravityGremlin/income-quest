@@ -60,3 +60,22 @@ last commit: 59bc9a6 auto check-in 2026-08-17 07:53 UTC
 
 ## 2026-08-17 08:08 UTC - auto check-in (15min timer)
 - uptime: up 8 hours, 42 minutes | disk: 11G/20G (59%) | puzzle procs: 0
+
+## 2026-08-17 08:15 UTC - escrow check (2h timer)
+- ## gsmg-io-5btc-puzzle
+- gsmg-io-5btc-puzzle                           small blob gate 1GSMG1JC9wtdSwfwApgj2xcmJPAwx7prBe           125634510 sats       partially-spent  OK
+- gsmg-io-5btc-puzzle                           Dualite blob gate 17ucy1K9ZUAaoY6JVtM932W9jUp5LXfyHa           375055310 sats       funded-unspent   OK
+- ## aoi-nakamoto-quizchain-0-854btc
+- aoi-nakamoto-quizchain-0-854btc               Real Big Block, stage 2 14zMkTgaVXJcxdh4JdWi29MLRR44iUSG9W           77700000 sats        funded-unspent   OK
+- aoi-nakamoto-quizchain-0-854btc               Quizchain2 Block 76 13Cv6SXUnzGDT8JHqzzJ8xMPtsSdhJA4wd           7700000 sats         funded-unspent   OK
+- aoi-nakamoto-quizchain-0-854btc               Real Big Block, stage 1 (certification reference, solved by a third party in 2019, not part of the live prize) 19TbyN5KCg1Lg7qHwezifsLVcdSa2Rj5KN           n/a                  swept            OK
+- ## guntis-vitolins-metamask-8-6eth
+- guntis-vitolins-metamask-8-6eth               main       0x9C2F44EFAd0c1E852a09dF9939e6DaF061140CaF   8.61254155425694462 ETH funded-unspent   OK
+- ## keir-finlow-bates-blockchain-book-600ksats
+- keir-finlow-bates-blockchain-book-600ksats    EN_easy_1  14aFhno96fkt7knLWMDQ4j8yh8v5hBF4n1           200000 sats          swept            OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_easy_2  14utGQn5GdfPvUrHNLAwTmmP99QpXm9mg6           200000 sats          swept            OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_medium_s 1QFafw3weoWTRQhiLafRw2eyWbVmES6wfJ           200000 sats          swept            OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_medium  17Y9czcbcCz433QXsy1SGQjwLb27BBtLLZ           200000 sats          funded-unspent   OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_hard_1  181rPpfdUGFg4fVEdhDZEfDbBSqgigtoZR           200000 sats          swept            OK
+- keir-finlow-bates-blockchain-book-600ksats    EN_hard_2  161YgNX2NrCzGunWvoV1hN3DuzWeuovBK3           200000 sats          swept            OK
+- 
